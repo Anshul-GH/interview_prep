@@ -14,8 +14,8 @@ def is_int(n, is_pos=False):
         return False
 
 def power(i, n):
-    if n == 1:
-        return i
+    if n == 0:
+        return 1
     else:
         return i * power(i, n-1)
 
@@ -27,3 +27,5 @@ if __name__ == '__main__':
         i = int(i)
         n = int(n)
         print(power(i, n))
+    else:
+        print('Please provide valid integers as base and exponent.')

@@ -42,7 +42,7 @@ def convert_dec_to_bin(n):
 
 
 if __name__ == '__main__':
-    num = input('Enter the decimal number:')
+    num = input('Enter the decimal integer number:')
 
     if is_int(num, is_pos=True):
         num = int(num)
@@ -51,3 +51,5 @@ if __name__ == '__main__':
         # bin = str(bin[::-1])
         # print(bin)
         print(convert_dec_to_bin(num))
+    else:
+        print("Please enter a positive integer only.")

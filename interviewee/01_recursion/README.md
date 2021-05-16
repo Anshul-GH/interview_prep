@@ -1,0 +1,1 @@
+Common or base problems that cover all the scenarios related to recursion that are generally asked in the interviews

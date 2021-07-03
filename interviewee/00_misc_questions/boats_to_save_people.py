@@ -3,7 +3,7 @@
 # Each boat carries at most two people at the same time, provided the sum of the weight
 # of those people is at most limit. Return the minimum number of boats to carry every given person.
 
-# Approach: 
+# Approach:
 # Maximize the number of pairs of people whose weights can be added together in the same boat. (Sum of the weights is lower than the limit)
 # Sort the array
 # Try to add the heaviest and lightest person together.

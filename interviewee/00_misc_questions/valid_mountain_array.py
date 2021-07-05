@@ -1,5 +1,5 @@
 # Given an array of integers arr, return true if and only if
-# it is a valid mountain array. 
+# it is a valid mountain array.
 # Arr is a mountain array if and only if:
 # arr.length >= 3
 # There exists some i with 0 < i < arr.length - 1 such that:
@@ -9,4 +9,11 @@
 # Mountain Array: [0, 2, 3, 4, 5, 2, 1, 0]
 # Not Mountain Array: [0, 2, 3, 3, 5, 2, 1, 0]
 
+def check_mountain_array(arr):
+    flag = False
+    counter = 0
+    while 
 
+
+if __name__ == '__main__':
+    pass

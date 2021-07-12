@@ -22,8 +22,17 @@
 
 ### unsolved ###
 def find_longest_non_repeating_substr(strg):
+    str_lst = list(strg)
+    track_chr = {}
+    max_len = 0
     
-    pass
+    for idx, val in enumerate(str_lst):
+        if val in track_chr:
+            track_chr[val] = idx
+        else:
+            max_len += 1
+
+
 
 if __name__ == '__main__':
     pass

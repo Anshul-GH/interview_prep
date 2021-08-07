@@ -37,6 +37,8 @@ if __name__ == '__main__':
     n = input("Enter the value of n:")
     if is_int(n, is_pos=True):
         n = int(n)
-        print(fibonacci(n))
+        for i in range(n):
+            print(fibonacci(i))
+        # print(fibonacci(n))
     else:
         print("Please enter a positive integer only.")

@@ -41,3 +41,47 @@ board[i].length == 9
 board[i][j] is a digit or '.'.
 
 '''
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        # checking horizontal rows
+        valid = True
+        for row in board:
+            trimmed_num = [int(num) for num in row if num.isdigit()]
+            if any((x > 9 for x in trimmed_num)):
+                valid = False
+                break
+            if len(set(trimmed_num)) != len(trimmed_num):
+                valid = False
+                break
+
+        # if above test is pass, checking vertical rows
+        if valid:
+            # transpose the matrix
+            board_t = [[board[j][i] for j in range(len(board))] for i in range(len(board[0]))]
+            for row in board_t:
+                trimmed_num = [int(num) for num in row if num.isdigit()]
+                if any((x > 9 for x in trimmed_num)):
+                    valid = False
+                    break
+                if len(set(trimmed_num)) != len(trimmed_num):
+                    valid = False
+                    break
+
+        # if above test is pass, check for individual 3X3 matrix to be valid
+        if valid:
+            for k in range(3):    
+                for i in range(3):
+                    row = []
+                    h_shft = i*3
+                    for j in range(3):
+                        v_shft = j*1 + k*3
+                        row += board[v_shft][h_shft:h_shft+3]
+                        trimmed_num = [int(num) for num in row if num.isdigit()]
+                        if any((x > 9 for x in trimmed_num)):
+                            valid = False
+                            break
+                        if len(set(trimmed_num)) != len(trimmed_num):
+                            valid = False
+                            break
+
+        return valid

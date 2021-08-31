@@ -20,4 +20,4 @@ Input: matrix = [[1,2],[3,4]]
 Output: [[3,1],[4,2]]
 
 '''
-matrix = [[matrix[j][i] for j in range(len(matrix))][::-1] for i in range(len(matrix[0]))]
+return [[matrix[j][i] for j in range(len(matrix))][::-1] for i in range(len(matrix[0]))]

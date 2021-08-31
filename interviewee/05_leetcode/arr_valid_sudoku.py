@@ -69,7 +69,7 @@ class Solution:
 
         # if above test is pass, check for individual 3X3 matrix to be valid
         if valid:
-            for k in range(3):    
+            for k in range(3):
                 for i in range(3):
                     row = []
                     h_shft = i*3

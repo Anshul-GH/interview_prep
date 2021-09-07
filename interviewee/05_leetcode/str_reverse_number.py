@@ -26,9 +26,23 @@ Output: 0
 
 Constraints:
 
--231 <= x <= 231 - 1
+-2^31 <= x <= 2^31 - 1
 '''
 
-x_rev = list(str(x))
-x_rev.reverse()
-x_rev = int(''.join(x_rev))
+
+class Solution:
+    def reverse(self, x: int) -> int:
+        neg = False
+        if x < 0:
+            neg = True
+        x_rev = list(str(abs(x)))
+        x_rev.reverse()
+        x_rev = int(''.join(x_rev))
+
+        if abs(x_rev) > (2**31 - 1):
+            return 0
+        elif neg:
+            x_rev = x_rev*-1
+            return x_rev
+        else:
+            return x_rev

@@ -55,4 +55,15 @@ class Solution:
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
         """
+        if self.head.val == node.val:
+            self.head = self.head.next
+        else:
+            previous_node = self.head
+            current_node = self.head
+
+            while current_node.val != node.val:
+                previous_node = current_node
+                current_node = current_node.next
+        
+            previous_node.next = current_node.next
         

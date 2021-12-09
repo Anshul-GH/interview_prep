@@ -1,4 +1,5 @@
 '''
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/886/
 The count-and-say sequence is a sequence of digit strings defined by the recursive formula:
 
     countAndSay(1) = "1"
@@ -35,5 +36,25 @@ Constraints:
     1 <= n <= 30
 
 '''
-class Solution:
+class Solution:    
     def countAndSay(self, n: int) -> str:
+        def say_the_number(num):    
+            number_to_say = ''
+            counter = 1
+
+            for idx, val in enumerate(num):
+                if idx < len(num)-1 and val == num[idx+1]:
+                    counter += 1
+                else:
+                    number_to_say += str(counter) + str(num[idx])
+                    counter = 1
+
+            return number_to_say
+        
+        counter = 1
+        number = str(counter)
+        while counter < n:
+            number = say_the_number(number)
+            counter += 1
+
+        return number

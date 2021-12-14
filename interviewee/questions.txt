@@ -1,3 +1,5 @@
+https://www.interviewbit.com/python-interview-questions/#what-is-python
+
 1. What is Python?
 Python is a high-level, general-purpose, interpreted programming language.
 It can be used to build any type of applications with the right tools and libs.

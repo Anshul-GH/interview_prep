@@ -1,0 +1,45 @@
+1. What is Python?
+Python is a high-level, general-purpose, interpreted programming language.
+It can be used to build any type of applications with the right tools and libs.
+Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management
+
+2. What are the benefits of using Python?
+- Python is a general purpose programming language
+- Simple and easy to learn syntax that emphasizes readibility and reduces programming maintenance costs
+- It is capable of scripting, supports third-party packages, is completely open-source
+- Also supports modularity and code reuse
+- Supports dynamic typing and dynamic binding
+
+3. What is a dynamically typed language?
+Typing - It refers to type-checking in programming languages.
+Kinds:
+1. Strongly-typed: Languages that do not allow for 'type-coercion' (implicit conversion of data types). 
+Example: Python. "1"+2 will result in an error
+2. Weakly-typed: Languages that allow 'type-coercion'
+Example: Javascript. "1"+2 will result in "12"
+
+Type-checking can also be done at two stages:
+1. Static: Data types are checked before execution.
+2. Dynamic: Data types are checked during execution.
+
+Python is an interpreted language - executes and interprets each statement line-by-line. Thus type-checking is done on the fly, during execution.
+Hence, Python is a dynamically typed language.
+
+4. What is an interpreted language?
+An interpreted language executes its statements line-by-line.
+Examples: Python, Javascript, R, PHP and Ruby etc.
+There is no code compilation step involved.
+
+5. What is PEP8 and why is it important?
+PEP stands for Python Enhancement Proposal.
+PEP 8 standardizes the style guideline for writing Python code
+It is not only a good practice but often mandatory for the code to adhere to PEP8 standards
+
+6. What is scope in Python?
+A scope is a block of code where a particular object is relevant
+1. Local Scope: Local objects available in the current function
+2. Global Scope: Objects available thorughout the code execution since their inception
+3. Module-level Scope: Refers to global objects of the current module accessible in the program.
+4. Outermost Scope: Refers to built-in names callable in the program. The objects in this scope are searched last to find the name referenced.
+
+7. What are lists and tuples? What is the key difference between the two?

@@ -1,6 +1,9 @@
 '''
 https://www.hackerrank.com/challenges/py-collections-deque/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
 '''
+def namestr(obj, namespace=globals()):
+    return [name for name in namespace if namespace[name] is obj]
+
 from collections import deque
 
 my_deque = deque()
@@ -16,9 +19,9 @@ for i in range(operations_count):
         value = None
 
     if value:
-        executable = f"my_deque.{operation}({value})"
+        executable = f"{namestr(my_deque)}.{operation}({value})"
     else:
-        executable = f"my_deque.{operation}()"
+        executable = f"{namestr(my_deque)}.{operation}()"
 
     exec(executable)
 

@@ -17,23 +17,25 @@ Reference: https://www.interviewbit.com/python-interview-questions/#what-is-pyth
 3. What is a dynamically typed language?
 - Typing: It refers to type-checking in programming languages.
 Kinds:
-A. Strongly-typed: Languages that do not allow for 'type-coercion' (implicit conversion of data types). 
+- Strongly-typed: Languages that do not allow for 'type-coercion' (implicit conversion of data types). 
 Example: Python. "1"+2 will result in an error
-B. Weakly-typed: Languages that allow 'type-coercion'
+- Weakly-typed: Languages that allow 'type-coercion'
+
 Example: Javascript. "1"+2 will result in "12"
 
 Type-checking can also be done at two stages:
-A. Static: Data types are checked before execution.
-B. Dynamic: Data types are checked during execution.
+- Static: Data types are checked before execution.
+- Dynamic: Data types are checked during execution.
 
 Python is an interpreted language - executes and interprets each statement line-by-line. Thus type-checking is done on the fly, during execution.
+
 Hence, Python is a dynamically typed language.
 ***
 
 4. What is an interpreted language?
-An interpreted language executes its statements line-by-line.
+- An interpreted language executes its statements line-by-line.
 Examples: Python, Javascript, R, PHP and Ruby etc.
-There is no code compilation step involved.
+- There is no code compilation step involved.
 ***
 
 5. What is PEP8 and why is it important?

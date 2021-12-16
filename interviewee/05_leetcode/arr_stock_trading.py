@@ -33,3 +33,29 @@ Constraints:
 1 <= prices.length <= 3 * 104
 0 <= prices[i] <= 104
 '''
+# Failed Attempt:
+# arr = [7,1,5,3,6,4]
+# profit_max = {}
+# for i in range(len(arr)):
+#     profit = 0
+#     buy = arr[i]
+#     remain = arr[i+1:]
+#     pos = 0
+#     for idx,val in enumerate(remain):
+#         if (val - buy) > profit:
+#             profit = (val - buy)
+#             pos = idx+i+1
+#     key = str(i)+','+str(pos)
+#     profit_max[key] = profit
+
+# print(profit_max)
+
+# Solution:
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        max_profit = 0
+        for i in range(1,len(prices)):
+            if prices[i] > prices[i-1]:
+                max_profit += prices[i] - prices[i-1]
+
+        return max_profit

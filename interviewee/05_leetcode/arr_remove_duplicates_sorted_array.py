@@ -21,3 +21,20 @@ Explanation: Your function should return k = 5, with the first five elements of 
 It does not matter what you leave beyond the returned k (hence they are underscores).
 
 '''
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        idx = 0
+        while idx+1<len(nums):
+            window = 0    
+            if (nums[idx] == nums[idx+1]) and nums[idx] != '_':        
+                while (idx+window+1) < len(nums) and (nums[idx+window] == nums[idx+window+1]):
+                    window += 1        
+                nums[idx:-window] = nums[idx+window:]        
+                nums[-window:] = ["_"]*len(nums[-window:])        
+            else:
+                idx +=1
+        k = 0
+        while k < len(nums) and nums[k] != '_':
+            k += 1
+        
+        return k

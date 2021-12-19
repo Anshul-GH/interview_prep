@@ -244,6 +244,8 @@ B. kwargs:
 ***
 
 25. Types of inheritance in Python:
+
+
 ![A. Single Inheriatnce:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/928/original/Single_Inheritance.jpg?1629984086)
 
 ![B. Multi-level Inheritance:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/930/original/Multi-level_Inheritance.jpg?1629984200)
@@ -253,11 +255,32 @@ B. kwargs:
 ![D. Heirarchical Inheritance:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/935/original/Hierarchical_Inheritance.jpg?1629985141)
 ***
 
-26. Why is finalize used?
+26. Why is 'finalize' used?
 - Finalize method is used for freeing up the unmanaged resources and clean up before the garbage collection method is invoked
 - Helps in performing memory management in Python
 ***
 
 27. What is 'Pandas'?
 - Pandas is an open source, Python-based library used in data manipulation applications requiring high performance.
-- Name is derived from 'Panel Data'
+- Name is derived from 'Panel Data' - having multidimensional data
+***
+
+28. How can we combine different pandas dataframes together?
+- Stacking Horizontally:
+```
+df1.append(df2)
+```
+- Stacking Vertically:
+```
+df1.concat(df2)
+```
+- Joining on one or more common columns:
+```
+df1.join(df2)
+```
+***
+
+29. Define GIL.
+- GIL stands for Global Interpreter Lock
+- Its a mutex used for limiting access to Python objects and aids in effective thread synchronization by avoiding deadlocks
+- GIL helps in achieving multitasking (and not parallel computing)

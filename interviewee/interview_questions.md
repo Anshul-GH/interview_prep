@@ -244,17 +244,13 @@ B. kwargs:
 ***
 
 25. Types of inheritance in Python:
-A. Single Inheriatnce:
-https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/928/original/Single_Inheritance.jpg?1629984086
+![A. Single Inheriatnce:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/928/original/Single_Inheritance.jpg?1629984086)
 
-B. Multi-level Inheritance:
-https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/930/original/Multi-level_Inheritance.jpg?1629984200
+![B. Multi-level Inheritance:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/930/original/Multi-level_Inheritance.jpg?1629984200)
 
-C. Multiple Inheritance:
-https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/934/original/Multiple_Inheritance.jpg?1629984498
+![C. Multiple Inheritance:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/934/original/Multiple_Inheritance.jpg?1629984498)
 
-D. Heirarchical Inheritance:
-https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/935/original/Hierarchical_Inheritance.jpg?1629985141
+![D. Heirarchical Inheritance:](https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/935/original/Hierarchical_Inheritance.jpg?1629985141)
 ***
 
 26. Why is finalize used?

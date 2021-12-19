@@ -187,4 +187,29 @@ def say_hello(name1, name2):
 ```
 ***
 
+19. What is pickling and unpickling in Python?
+- The 'pickle' module in python is used to serialize objects
+- Serialization: Transforming an object into a format (byte stream) that can be stored (dumped in memory as file) and recalled (deserialized) later on from the memory, when needed.
+- Function calls:
+Pickling: pickle.dump()
+Unpickling: pickle.load()
+***
 
+20. What are generators in Python?
+- Generators are functions in Python that return an iterable collection of items, one at a time, in a set manner.
+- Generators use the 'yield' keyword, rather than 'return' to return a generator object.
+Example: Fibonacci using generators:
+```
+def fib(n):
+    p, q = 0, 1
+    while (p < n):
+        yield p
+        p, q = q, p+q
+
+x = fib(10)
+for i in x:
+    print(i)    # output: 0, 1, 1, 2, 3, 5, 8
+```
+***
+
+21. W

@@ -19,8 +19,8 @@ Reference: https://www.interviewbit.com/python-interview-questions/#what-is-pyth
 Kinds:
 - Strongly-typed: Languages that do not allow for 'type-coercion' (implicit conversion of data types). 
 Example: Python. "1"+2 will result in an error
-- Weakly-typed: Languages that allow 'type-coercion'
 
+- Weakly-typed: Languages that allow 'type-coercion'
 Example: Javascript. "1"+2 will result in "12"
 
 Type-checking can also be done at two stages:
@@ -39,9 +39,9 @@ Examples: Python, Javascript, R, PHP and Ruby etc.
 ***
 
 5. What is PEP8 and why is it important?
-PEP stands for Python Enhancement Proposal.
-PEP 8 standardizes the style guideline for writing Python code
-It is not only a good practice but often mandatory for the code to adhere to PEP8 standards
+- PEP stands for Python Enhancement Proposal.
+- PEP 8 standardizes the style guideline for writing Python code
+- It is not only a good practice but often mandatory for the code to adhere to PEP8 standards
 ***
 
 6. What is scope in Python?
@@ -101,7 +101,7 @@ public: Any class can refer to the field or call the method.
 ***
 
 12. What is self in Python?
-- Self keyword in Python is used to identify an instance of the calling class
+- 'self' keyword in Python is used to identify an instance of the calling class
 - Helps in distinguising between the methods and attributes of a class from its local variables
 ***
 
@@ -112,5 +112,79 @@ __init__ is the constructor method in Python
 
 14. What is break, continue and pass in Python?
 - Break: Terminates the loop immediately and the control flows to the statement after the body of the loop.
+- Continue: Terminates the current iteration of the statement, skips the rest of the code in the current iteration and the control flows to the next iteration of the loop.
+- Pass: Pass keyword in Python is generally used to fill up empty blocks and is similar to an empty statement. Its used as a pace-hoder for code that is yet to be defined or to create abstract entities.
+***
 
-- Continue: Terminates the 
+15. What is the difference between Python Arrays and Lists?
+- Arrays in Python (import array) can only contain elements of the same datatype
+- 'array' package is a wrapper around C language arrays and consumes far less memory than lists.
+- Lists in python can contain elemnts of different datatypes 
+- List consumes large memory
+***
+
+16. How is memory managed in Python?
+- Memory management in Python is handled by Python Memory Manager.
+- The memory allocated by the manager is in form of a private heap space dedicated to Python
+- All Python objects are stored in this heap and are private.
+- These objects are inaccessible to the programer directly.
+- Additionally, Python has built-in garbage collection to recycle unuse memory for the private heap space.
+***
+
+17. What are Python namespaces?
+- A namespace in Python ensures that object names in a program are unique and can be used without any conflict.
+A. Local Namespace: Temporarily created for function calls and gets cleared when the function returns.
+B. Global Namespace: Includes the names of various imported packages that are being used in the current project.
+C. Built-In Namespace: Includes built-in functions of core Python and built-in names for various types of exceptions.
+***
+
+18. What are decorators in Python?
+- Decorators in Python are essentially functions that add functionality to an existing function in Python without changing the structure of the function itself.
+- They are represented with '@' prefixed names and are called in bottom-up fashion.
+- Example:
+```
+# decorator function to convert to lowercase
+def lowercase_decorator(function):
+    def wrapper():
+        func = function()
+        string_lowercase = func.lower()
+        return string_lowercase
+    
+    return wrapper
+
+# decorator function to split string
+def splitter_decorator(function):
+    def wrapper():
+        func = function()
+        string_split = func.split()
+        return string_split
+    
+    return wrapper
+
+
+@splitter_decorator # this is executed second
+@lowercase_decorator # this is executed first
+def hello():
+    return 'Hello World'
+```
+
+Decorators can also access arguments for the functions and can modify and pass them back
+
+```
+# decorator function to capitalize names
+def name_decorator(function):
+    def wrapper(arg1, arg2):
+        arg1 = arg1.capitalize()
+        arg2 = arg2.capitalize()
+        string_hello = function(arg1, arg2)
+        return string_hello
+    
+    return wrapper
+
+@name_decorator
+def say_hello(name1, name2):
+    return "Hello " + name1 + "! Hello " + name2 + "!"
+```
+***
+
+

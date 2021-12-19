@@ -212,4 +212,56 @@ for i in x:
 ```
 ***
 
-21. W
+21. How is Python interpreted?
+- Python is a bytecode (set of interpreter readable instructions) interpreted generally.
+- The Python source code is a file with .py extension
+- The .py source code is first compiled to give .pyc which is a bytecode. 
+- This bytecode can then be interpreted by the official CPython or JIT (Just In Time) compiler compiled by PyPy.
+***
+
+22. What are iterators in Python?
+- An iterator is an object that can remember its state - i.e. where it is during an iteration
+- The __iter__() method initializes an iterator. 
+- It has a __next__() method that returns the next item in iteration and points to the next element.
+- At the end of the iterable, the __next__() method returns a StopIteration exception.
+***
+
+23. What does *args and **kwargs mean?
+A. args:
+- '*args' is a special syntax used in the function definition to pass variable length arguments.
+- "*" means variable length and 'args' is the name used by convention - not mandatory
+
+B. kwargs:
+- '**kwargs' is a special syntax used in function definition to pass variable length keyworded arguments.
+- Here also 'kwargs' is a name used as convention but can be any other name/string as well
+- Keyworded argument means a variable that has a name when passed to a function
+- It is actually a dictionary of variable names and corresponding values.
+***
+
+24. How does inheritance work in Python?
+- Inheritance allows for a class to access the attributes and methods of another class.
+- Aids in code reusability and manitaining application without code redundancy
+***
+
+25. Types of inheritance in Python:
+A. Single Inheriatnce:
+https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/928/original/Single_Inheritance.jpg?1629984086
+
+B. Multi-level Inheritance:
+https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/930/original/Multi-level_Inheritance.jpg?1629984200
+
+C. Multiple Inheritance:
+https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/934/original/Multiple_Inheritance.jpg?1629984498
+
+D. Heirarchical Inheritance:
+https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/935/original/Hierarchical_Inheritance.jpg?1629985141
+***
+
+26. Why is finalize used?
+- Finalize method is used for freeing up the unmanaged resources and clean up before the garbage collection method is invoked
+- Helps in performing memory management in Python
+***
+
+27. What is 'Pandas'?
+- Pandas is an open source, Python-based library used in data manipulation applications requiring high performance.
+- Name is derived from 'Panel Data'

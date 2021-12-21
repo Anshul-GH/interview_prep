@@ -1,5 +1,6 @@
 '''
-Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
+Determine if a 9 x 9 Sudoku board is valid. 
+Only the filled cells need to be validated according to the following rules:
 
 Each row must contain the digits 1-9 without repetition.
 Each column must contain the digits 1-9 without repetition.
@@ -47,9 +48,11 @@ class Solution:
         valid = True
         for row in board:
             trimmed_num = [int(num) for num in row if num.isdigit()]
+            # if any of the digits in the row are > 9
             if any((x > 9 for x in trimmed_num)):
                 valid = False
                 break
+            # if the row contains duplicate numbers
             if len(set(trimmed_num)) != len(trimmed_num):
                 valid = False
                 break

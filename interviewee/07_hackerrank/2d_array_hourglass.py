@@ -133,10 +133,10 @@ def hourglassSum(arr, inp_width=3):
     count_outer = 0
     max_len = len(arr)
     while (count_outer + width) <= max_len:
-        sub_arr = arr[count_outer:count_outer + width]
+        sub_arr = arr[count_outer:count_outer+width]
         count_inner = 0
-        while (count_inner + width) <= max_len:
-            hourglass = [val[count_inner:count_inner + width] for val in sub_arr]
+        while (count_inner+width) <= max_len:
+            hourglass = [val[count_inner:count_inner+width] for val in sub_arr]
             sum_collection.append(get_hg_sum(hourglass))
             count_inner += 1
         count_outer += 1

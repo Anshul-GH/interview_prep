@@ -58,7 +58,7 @@ class Solution:
         if self.head.val == node.val:
             self.head = self.head.next
         else:
-            previous_node = self.head
+            previous_node = None
             current_node = self.head
 
             while current_node.val != node.val:

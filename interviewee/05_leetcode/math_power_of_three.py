@@ -39,7 +39,7 @@ class Solution:
         # check even or n=0
         if abs(n) % 2 == 0 or n == 0:
             return False
-        # exactly equal to 3
+        # exactly equal to 3 or 1
         elif n == 3 or n == 1:
             return True    
         else:

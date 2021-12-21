@@ -44,3 +44,14 @@ class Solution:
                 for i in range(p, n, p):
                     sieve[i] = False
         return len(out)
+    
+    # alternate solution
+    def countPrimes(self, n: int) -> int:
+        counter = 0
+        sieve = [True] * (n)
+        for p in range(2, n):
+            if (sieve[p]):
+                counter += 1
+                for i in range(p, n, p):
+                    sieve[i] = False
+        return counter

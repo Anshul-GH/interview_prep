@@ -32,14 +32,38 @@ Constraints:
 #         self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        depth = 0
-        if (root is not None) or (root is not None and root.val == 0):
-            depth += 1
-            if root.left and root.right:
-                depth -= 1
-            if root.left:
-                depth = depth + self.maxDepth(root.left)
-            if root.right:
-                depth = depth + self.maxDepth(root.right)
+        if root is not None:
+            # return depth
+            left_depth = self.maxDepth(root.left)
+            right_depth = self.maxDepth(root.right)
 
-        return depth
+            # use the larger length
+            if left_depth > right_depth:
+                return left_depth + 1
+            else:
+                return right_depth + 1
+        else:
+            return 0
+
+        # depth = 0
+        # if (root is not None) or (root is not None and root.val == 0):
+        #     depth += 1
+        #     if root.left and root.right:
+        #         depth -= 1
+        #     if root.left:
+        #         depth = depth + self.maxDepth(root.left)
+        #     if root.right:
+        #         depth = depth + self.maxDepth(root.right)
+
+        # if root is not None:
+        #     # return depth
+        #     left_depth = maxDepth(root.left)
+        #     right_depth = maxDepth(root.right)
+
+        #     # use the larger length
+        #     if left_depth > right_depth:
+        #         return left_depth + 1
+        #     else:
+        #         return right_depth + 1
+        # else:
+        #     return 0

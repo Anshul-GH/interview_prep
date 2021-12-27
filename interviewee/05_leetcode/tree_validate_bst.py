@@ -25,18 +25,32 @@ Constraints:
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        if root:
-            is_valid = True
-            if root.left:
-                if root.left.val < root.val:                    
-                    is_valid = self.isValidBST(root.left)
-                else:
-                    is_valid = False
-            if root.right:
-                if root.right.val > root.val:                    
-                    is_valid = self.isValidBST(root.right)
-                else:
-                    is_valid = False
+    def isValidBSTUtil(self, node, maxm=(2**32-1), minm=(-2**32)):
+        if node is None:
+            return True
+        
+        if node.val < minm or node.val > maxm:
+            return False
             
-            return is_valid
+        return (self.isValidBSTUtil(node.left, maxm=(node.val-1), minm=minm) \
+            and self.isValidBSTUtil(node.right, maxm=maxm, minm=(node.val+1)))
+
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        return self.isValidBSTUtil(root)
+
+#         if root:
+#             is_valid = True
+#             if root.left:
+#                 if root.left.val < root.val:                    
+#                     is_valid = self.isValidBST(root.left)
+#                 else:
+#                     is_valid = False
+#             if root.right:
+#                 if root.right.val > root.val:                    
+#                     is_valid = self.isValidBST(root.right)
+#                 else:
+#                     is_valid = False
+            
+#             return is_valid
+#         else:
+#             return True

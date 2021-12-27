@@ -35,4 +35,4 @@ class Solution:
         return False
         
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-        self.isSymmetricUtils(root, root)
+        return self.isSymmetricUtils(root, root)

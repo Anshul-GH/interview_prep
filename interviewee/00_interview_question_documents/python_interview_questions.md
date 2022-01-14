@@ -394,3 +394,33 @@ print(num := 15)
 ***
 
 34. What are descriptors in Python?
+- Descriptors are Python objects that implement a method of the 'descriptor protocol'
+- This gives us the ability to create objects that have a special behavior when they are accessed as attributes of other objects.
+```
+# descriptor methods
+__get__(self, obj, type=None) -> object
+__set__(self, obj, value) -> None
+__delete__(self, obj) -> None
+__set_name__(self, owner, name)
+```
+- Example:
+```
+# descriptors.py
+class Verbose_attribute():
+    def __get__(self, obj, type=None) -> object:
+        print("accessing the attribute to get the value")
+        return 42
+    def __set__(self, obj, value) -> None:
+        print("accessing the attribute to set the value")
+        raise AttributeError("Cannot change the value")
+
+class Foo():
+    attribute1 = Verbose_attribute()
+
+my_foo_object = Foo()
+x = my_foo_object.attribute1
+print(x)
+```
+***
+
+35. 

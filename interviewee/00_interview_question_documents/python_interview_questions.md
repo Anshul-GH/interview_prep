@@ -423,4 +423,63 @@ print(x)
 ```
 ***
 
-35. 
+35. What is an Abstract Base Class (ABC) in Python?
+- An abstract base class can be considered as a blueprint for other classes
+- Allows for creating a set of methods that must be created within any child class built from the abstract class
+Advantage:
+- By defining an abstract base class, one can define a common API structure for subclasses
+- Helps in standardizing the methods that can be implemented as a part of APIs
+- Also helps working with large teams with a larger codebase
+Example:
+```
+# Python program showing
+# abstract base class work
+ 
+from abc import ABC, abstractmethod
+ 
+class Polygon(ABC):
+ 
+    @abstractmethod
+    def noofsides(self):
+        pass
+ 
+class Triangle(Polygon):
+ 
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 3 sides")
+ 
+class Pentagon(Polygon):
+ 
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 5 sides")
+ 
+class Hexagon(Polygon):
+ 
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 6 sides")
+ 
+class Quadrilateral(Polygon):
+ 
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 4 sides")
+ 
+# Driver code
+R = Triangle()
+R.noofsides()
+ 
+K = Quadrilateral()
+K.noofsides()
+ 
+R = Pentagon()
+R.noofsides()
+ 
+K = Hexagon()
+K.noofsides()
+```
+***
+
+36. 

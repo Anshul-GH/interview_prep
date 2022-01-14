@@ -376,4 +376,21 @@ def __init__(self, name: str, unit_price: float, quantity_on_hand: int = 0):
 ```
 ***
 
-33. 
+33. What is Warlus Operator in Python?
+- Walrus operator introduced in Python 3.8 offers a way to accomplish two tasks at once
+A. Assigning a value to a variable
+B. Returning that value
+- It offers a way to write shorter and more readable code that can be more efficient computationally
+```
+# Old:
+num = 15
+print(num)
+
+# Walrus:
+print(num := 15)
+
+# Output: 15
+```
+***
+
+34. What are descriptors in Python?

@@ -340,8 +340,40 @@ major: str='Tom'
 ```
 - For annotating advanced types like 'list', 'dict', etc, we need to use 'typing' module
 ```
-from typing import List, Tuple, Dictl: List[int] = [1, 2, 3]
+from typing import List, Tuple, Dict
+
+l: List[int] = [1, 2, 3]
 t1: Tuple[float, str, int] = (1.0, 'two', 3)
 t2: Tuple[int, ...] = (1, 2.0, 'three')
 d: Dict[str, int] = {'uno': 1, 'dos': 2, 'tres': 3}
 ```
+***
+
+32. 'dataclasses' module in Python.
+- The ['dataclasses'](https://docs.python.org/3/library/dataclasses.html) module in Python provides a decorator and functions for automatically adding special methods like:
+__init__()
+__repr__()
+to a user defined class.
+```
+from dataclasses import dataclass
+
+@dataclass
+class InventoryItem:
+    """Class for keeping track of an item in inventory."""
+    name: str
+    unit_price: float
+    quantity_on_hand: int = 0
+
+    def total_cost(self) -> float:
+        return self.unit_price * self.quantity_on_hand
+```
+The above code will add, among other things, a __init__() that looks like:
+```
+def __init__(self, name: str, unit_price: float, quantity_on_hand: int = 0):
+    self.name = name
+    self.unit_price = unit_price
+    self.quantity_on_hand = quantity_on_hand
+```
+***
+
+33. 

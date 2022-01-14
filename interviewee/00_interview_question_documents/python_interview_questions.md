@@ -284,3 +284,64 @@ df1.join(df2)
 - GIL stands for Global Interpreter Lock
 - Its a mutex used for limiting access to Python objects and aids in effective thread synchronization by avoiding deadlocks
 - GIL helps in achieving multitasking (and not parallel computing)
+***
+
+30. Metaclass in Python. What is its use?
+- A class in Python is an object/instance of 'metaclass'
+- The default metaclass is 'type'
+```
+class Foobar:
+    pass
+
+type(Foobar) # --> <class 'type'>
+
+
+foo = Foobar()
+type(foo) # --> <class '__main__.Foobar'>
+```
+![Pictorial Rep:](https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/instance-of.png)
+
+- Alternate way to define a class in Python:
+```
+MyClass = tyep('MyClass', (), {})
+type(MyClass) # --> <class '__main__.MyClass'>
+```
+
+- We can also create out own custom metaclass
+```
+class Meta(type):
+    pass
+
+class Complex(metaclass=Mete):
+    pass
+
+type(Complex) # --> <class '__main__.Meta'>
+```
+***
+
+31. Static typing in Python
+- Python by default, is a dynamically typed language
+- Meaning, it is not necessary to declare the type of a variable when assigning a value to it.
+```
+# This will work with Python
+major = 'Tom'
+major = 1
+```
+- This is convenient as well as challenging in certain scenarios
+- Example: If a function only expects integer arguments, throwing strings into the function might crash the program.
+- Function Annotation:
+```
+def foo(n: int, s: str='Tom') -> str:
+    return s*n
+```
+- Variable Annotation:
+```
+major: str='Tom'
+```
+- For annotating advanced types like 'list', 'dict', etc, we need to use 'typing' module
+```
+from typing import List, Tuple, Dictl: List[int] = [1, 2, 3]
+t1: Tuple[float, str, int] = (1.0, 'two', 3)
+t2: Tuple[int, ...] = (1, 2.0, 'three')
+d: Dict[str, int] = {'uno': 1, 'dos': 2, 'tres': 3}
+```

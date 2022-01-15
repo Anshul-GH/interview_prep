@@ -545,3 +545,34 @@ r.rk()
 ```
 - This is also known as 'Diamond Shaped Inheritance Problem' 
 ***
+
+
+38. What is the use of 'nonlocal' scope in Python?
+- The 'nonlocal' keyword is used to work with variables inside nested functions where the variable should not belong to the inner function
+- Example:
+```
+# with nonlocal:
+def myfunc1():
+  x = "John"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1())
+# Output: hello
+
+
+
+# without nonlocal:
+def myfunc1():
+  x = "John"
+  def myfunc2():
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1()) 
+# Output: John
+```

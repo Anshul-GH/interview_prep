@@ -513,3 +513,35 @@ collected = gc.collect()
 print("Garbage collector: collected",
           "%d objects." % collected)
 ```
+***
+
+37. What is MRO (Method Resolution Order) in Python?
+- Defines the order in which the base classes are searched when executing a method
+- First, the method or attribute is searched within a class and then it follows the order we specified while inheriting
+- While inheriting from another class, the interpreter needs a way to resolve the methods that are being called via an instance.
+- Example:
+```
+# Python program showing
+# how MRO works
+  
+class A:
+    def rk(self):
+        print(" In class A")
+class B(A):
+    def rk(self):
+        print(" In class B")
+class C(A):
+    def rk(self):
+        print("In class C")
+  
+# classes ordering
+class D(B, C):
+    pass
+     
+r = D()
+r.rk()
+
+# Output -> In class B
+```
+- This is also known as 'Diamond Shaped Inheritance Problem' 
+***

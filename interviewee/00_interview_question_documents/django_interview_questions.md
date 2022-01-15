@@ -28,5 +28,8 @@ https://www.interviewbit.com/django-interview-questions/
 - They generally comparise of HTML, CSS and JavaScript in which dynamic variables and information are embedded with the help of views
 ***
 
-5. What are views in Django?
-- 
+5. Explain the functionality of various components of a Django project
+- settings.py: Controls project settings
+- urls.py: Tells Django which pages to build in response to a browser or URL request
+- wsgi.py: Web Server Gateway Interface file helps Django serve our eventual web pages
+- manage.py: Used for executing various 

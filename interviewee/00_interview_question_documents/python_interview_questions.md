@@ -482,4 +482,34 @@ K.noofsides()
 ```
 ***
 
-36. 
+36. Garbage collection in Python
+- In Python, the memory allocation and deallocation is automatic
+- Python uses two strategies for memory allocation:
+A. Reference counting - counting the number of times and object is referenced by other objects
+B. Garbage collection - when the reference to an object is removed, the reference count is decremented
+- Example:
+```
+# Literal 9 is an object
+b = 9
+ 
+# Reference count of object 9
+# becomes 0.
+b = 4
+```
+- Python schedules garbage collection based upon a threshold of object allocation and object deallocation.
+- When the number of allocations minus the number of deallocations is greater than the threshold number, the garbage collector is run.
+- Garbage collection can be invoked manually as follows:
+```
+# Importing gc module
+import gc
+ 
+# Returns the number of
+# objects it has collected
+# and deallocated
+collected = gc.collect()
+ 
+# Prints Garbage collector
+# as 0 object
+print("Garbage collector: collected",
+          "%d objects." % collected)
+```

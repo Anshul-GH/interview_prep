@@ -32,4 +32,8 @@ https://www.interviewbit.com/django-interview-questions/
 - settings.py: Controls project settings
 - urls.py: Tells Django which pages to build in response to a browser or URL request
 - wsgi.py: Web Server Gateway Interface file helps Django serve our eventual web pages
-- manage.py: Used for executing various 
+- manage.py: Used for executing various django commands such as running the local web server or creating a new app
+- asgi.py: Allows for Asynchronous Server Gateway Interface (ASGI) to be run
+***
+
+6. 

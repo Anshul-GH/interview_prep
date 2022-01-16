@@ -36,4 +36,12 @@ https://www.interviewbit.com/django-interview-questions/
 - asgi.py: Allows for Asynchronous Server Gateway Interface (ASGI) to be run
 ***
 
-6. 
+6. Explain the functionality of various components of an app within a Django project
+- admin.py: Configuration file for the built-in Django Admin app
+- apps.py: Configuration file for the app itself
+- migrations/: Keeps a track of any changes to our models.py file so that our DB and models.py stay in sync
+- models.py: Define database models which Django automatically translates into database tables
+- tests.py: To create app-specific tests
+- views.py: Handle request/response logic for our web app
+***
+

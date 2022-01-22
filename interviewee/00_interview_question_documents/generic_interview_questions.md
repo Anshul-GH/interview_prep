@@ -23,3 +23,12 @@ d. Does the new code adheres to existing standards and guidelines?
 - Manual review gate before merging code changes to production
 - Use peer pressure to your advantage
 ***
+
+4. How is code coverage calculated?
+- Function coverage
+- Statement coverage
+- Branches coverage
+- Condition coverage
+- Line coverage
+***
+

@@ -1,4 +1,5 @@
 '''
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/99/others/722/
 Given an array nums containing n distinct numbers in the range [0, n], 
 return the only number in the range that is missing from the array.
 
@@ -46,3 +47,12 @@ class Solution:
 
         # last element in the list is missing
         return len_nums
+
+# alternate
+        # nums.sort()
+        # idx = 0    
+        # while(idx < len(nums) and idx == nums[idx]):
+        #     idx += 1
+        #     continue
+
+        # return idx

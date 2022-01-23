@@ -1,5 +1,5 @@
 from sqlalchemy import func
-from ..arr_contains_duplicate import Solution
+from solutions.arr_contains_duplicate import Solution
 import unittest
 
 class TestArrContDuplicates(unittest.TestCase):

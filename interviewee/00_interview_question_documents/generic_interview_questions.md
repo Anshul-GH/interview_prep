@@ -57,3 +57,5 @@ d. Does the new code adheres to existing standards and guidelines?
 - (L)iskov Substitution Principle (LSP): Subtypes must be substitutable for their base types
 - (I)nterface Segregation Principle (ISP): The dependency of one class on another should depend on the smallest possible interface
 - (D)ependency Inversion Principle (DIP): Depend upon abstractions (interfaces) not upon concrete classes
+***
+

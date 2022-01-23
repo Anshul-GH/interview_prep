@@ -50,3 +50,10 @@ d. Does the new code adheres to existing standards and guidelines?
 
 ![](https://wac-cdn.atlassian.com/dam/jcr:b2a6d1a7-1a60-4c77-aa30-f3eb675d6ad6/ci%20cd%20asset%20updates%20.007.png?cdnVersion=176)
 ***
+
+6. SOLID Design Principles
+- (S)ingle Responsibility Principle: A class should have one and only one reason to change
+- (O)pen Closed Principle: Software entities should be open for extension but closed for modification
+- (L)iskov Substitution Principle (LSP): Subtypes must be substitutable for their base types
+- (I)nterface Segregation Principle (ISP): The dependency of one class on another should depend on the smallest possible interface
+- (D)ependency Inversion Principle (DIP): Depend upon abstractions (interfaces) not upon concrete classes

@@ -70,8 +70,8 @@ A scope is a block of code where a particular object is relevant
 ***
 
 9. What is ‘pass’ in Python?
-The pas keyword represents a null operation in Python
-Used to fill up empty blocks of code which may execute during the runtime but logic for them is yet to be written
+- The pass keyword represents a null operation in Python
+- Used to fill up empty blocks of code which may execute during the runtime but logic for them is yet to be written
 ***
 
 10. What are modules and packages in Python?

@@ -1,7 +1,7 @@
 '''
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/99/others/762/
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
-Given two integers x and y, return the Hamming distance between them.
+The Hamming distance between two integers is the number of positions at which the corresponding
+bits are different. Given two integers x and y, return the Hamming distance between them.
 
 Example 1:
 Input: x = 1, y = 4

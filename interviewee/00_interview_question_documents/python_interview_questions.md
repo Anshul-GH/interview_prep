@@ -303,7 +303,7 @@ type(foo) # --> <class '__main__.Foobar'>
 
 - Alternate way to define a class in Python:
 ```
-MyClass = tyep('MyClass', (), {})
+MyClass = type('MyClass', (), {})
 type(MyClass) # --> <class '__main__.MyClass'>
 ```
 
@@ -393,7 +393,7 @@ print(num := 15)
 ```
 ***
 
-34. What are descriptors in Python?
+34. What are "descriptors" in Python?
 - Descriptors are Python objects that implement a method of the 'descriptor protocol'
 - This gives us the ability to create objects that have a special behavior when they are accessed as attributes of other objects.
 ```
@@ -546,7 +546,6 @@ r.rk()
 - This is also known as 'Diamond Shaped Inheritance Problem' 
 ***
 
-
 38. What is the use of 'nonlocal' scope in Python?
 - The 'nonlocal' keyword is used to work with variables inside nested functions where the variable should not belong to the inner function
 - Example:
@@ -577,3 +576,7 @@ print(myfunc1())
 # Output: John
 ```
 ***
+
+39. How to package code in Python?
+- 'pip' which is a package management system for Python, fetches the already packaged libraries from PyPI(Python Package Index)
+- Before a package can be created from our Python code, 

@@ -97,4 +97,14 @@ tagging.tag(['Hello', 'Geeks'])
 - n-gram: Parsing the sentence, 'n' words at a time.
 *** 
 
-11. 
+11. What are the steps involved in solving an NLP problem?
+- Gather text
+- Apply stemming and lemmatization for cleanup
+- Feature engineering
+- Embed using word2vec
+- Train the built model using Neural Network based or other ML approaches
+- Evaluate the model performance
+- Make appropriate changes to the model to optimize
+- Deploy the model
+***
+

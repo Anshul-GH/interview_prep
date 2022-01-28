@@ -90,3 +90,11 @@ tagging.tag(['Hello', 'Geeks'])
 - Each tagger has a 'tag()' method that takes a list of tokens (list of words produced by the word tokenizer), where each token is a single word.
 ***
 
+10. Unigrams, Bigrams, Trigrams and n-grams in NLP.
+- Unigram: Parsing the sentence, one word at a time.
+- Bigram: Parsing the sentence, two words at a time.
+....
+- n-gram: Parsing the sentence, 'n' words at a time.
+*** 
+
+11. 

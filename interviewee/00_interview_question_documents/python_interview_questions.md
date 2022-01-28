@@ -45,11 +45,11 @@ Examples: Python, Javascript, R, PHP and Ruby etc.
 ***
 
 6. What is scope in Python?
-A scope is a block of code where a particular object is relevant
-1. Local Scope: Local objects available in the current function
-2. Global Scope: Objects available thorughout the code execution since their inception
-3. Module-level Scope: Refers to global objects of the current module accessible in the program.
-4. Outermost Scope: Refers to built-in names callable in the program. The objects in this scope are searched last to find the name referenced.
+- A scope is a block of code where a particular object is relevant
+    * Local Scope: Local objects available in the current function
+    * Global Scope: Objects available thorughout the code execution since their inception
+    * Module-level Scope: Refers to global objects of the current module accessible in the program.
+    * Outermost Scope: Refers to built-in names callable in the program. The objects in this scope are searched last to find the name referenced.
 ***
 
 7. What are lists and tuples? What is the key difference between the two?

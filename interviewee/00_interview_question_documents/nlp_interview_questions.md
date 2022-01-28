@@ -108,3 +108,23 @@ tagging.tag(['Hello', 'Geeks'])
 - Deploy the model
 ***
 
+12. How to tokenize sentences using NLTK package?
+- Tokenization is a process to split the sentences into tokens
+- Sentence tokenization refers to splitting a text or paragraph into sentences
+```
+para = '''
+This is a sample paragraph text.
+Testing the sent tokenize method.
+This is a collection of interview
+questions for NLP.
+'''
+
+from nltk.tokenize import sent_tokenize
+sent_tokenize(para)
+```
+- Word tokenization refers to splitting the sentences into words
+```
+from nltk.tokenize import word_tokenize
+word_tokenize(para)
+```
+***

@@ -128,3 +128,6 @@ from nltk.tokenize import word_tokenize
 word_tokenize(para)
 ```
 ***
+
+13. Stemming and Lemmatization.
+- Stemming: Process of 

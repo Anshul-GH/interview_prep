@@ -57,4 +57,36 @@
 - Pragmatic Analysis: Process of finding useful information from text
 ***
 
-8. 
+8. What is TF-IDF?
+- Term Frequency - Inverse Document Frequency indicates the importance of a word in a set.
+- It helps in information retrieval with numerical statistics.
+- TF helps in calculating the ratio of the frequency of a term in a document and the total number of terms.
+- IDF denotes the importance of a term in a document.
+- When (TF * IDF) is high, the frequency of the term is less and vice-versa.
+
+    * TF(W) = (Frequency of W in the document)/(Total number of terms in the document)
+    * IDF(W) = log_e((Total number of documents)/(Number of documents having the term, W))
+***
+
+9. What is POS?.
+- POS stands for Part-Of-Speech
+- It is a process of converting a semtence into various forms, like:
+    * list of words
+    * list of tuples
+- These forms get 'tags' which indicate whether the word is a noun, adjective, verb etc
+- Code Snippet:
+```
+from nltk.tag import DefaultTagger
+
+# defining the tag
+tagging = DefaultTagger('NN')
+
+# tagging
+tagging.tag(['Hello', 'Geeks'])
+
+# Output: [('Hello', 'NN'), ('Geeks', 'NN')]
+
+```
+- Each tagger has a 'tag()' method that takes a list of tokens (list of words produced by the word tokenizer), where each token is a single word.
+***
+

@@ -12,6 +12,8 @@
 # For your information, the output from the perception function will be used by
 # Path Planner and Actuator Control modules to drive the vehicle. 
 # However, development of these functions are out of the scope for your task.
+
+
 from PIL import Image
 import cv2
 
@@ -41,6 +43,9 @@ class Camera:
                 img = Image.open(image)
                 # logic to process the image and detect entities
                 # detected entities are added to the collection
+        else:
+            self.process_stream()
+            self.detect_entities()
 
         return entities
         

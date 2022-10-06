@@ -19,57 +19,57 @@ Constraints:
     The number of nodes in the tree is in the range [0, 2000].
     -1000 <= Node.val <= 1000
 '''
-from collections import deque
+# from collections import deque
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        # base case
-        if not root:
-            return []
+# class Solution:
+#     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+#         # base case
+#         if not root:
+#             return []
         
-        # create an empty queue and add the root node to it
-        queue = deque()
-        queue.append(root)
+#         # create an empty queue and add the root node to it
+#         queue = deque()
+#         queue.append(root)
 
-        level_data = {}
-        level = 0
+#         level_data = {}
+#         level = 0
 
-        # loop till queue is empty
-        while queue:
-            # process each node in the queue and enqueue
-            # their non empty left and right childs
-            curr = queue.popleft()
+#         # loop till queue is empty
+#         while queue:
+#             # process each node in the queue and enqueue
+#             # their non empty left and right childs
+#             curr = queue.popleft()
 
-            if level in level_data:
-                level_data[level].append(curr.val)
-            else:
-                level_data[level] = [curr.val]
+#             if level in level_data:
+#                 level_data[level].append(curr.val)
+#             else:
+#                 level_data[level] = [curr.val]
 
-            if curr.left and curr.right:
-                level += 1
-                queue.append(curr.left)
-                queue.append(curr.right)
+#             if curr.left and curr.right:
+#                 level += 1
+#                 queue.append(curr.left)
+#                 queue.append(curr.right)
 
-            elif curr.left and not curr.right:
-                level += 1
-                queue.append(curr.left)
+#             elif curr.left and not curr.right:
+#                 level += 1
+#                 queue.append(curr.left)
 
-            elif curr.right and not curr.left:
-                level += 1
-                queue.append(curr.right)
+#             elif curr.right and not curr.left:
+#                 level += 1
+#                 queue.append(curr.right)
 
-        # return level_data
+#         # return level_data
 
-        output = []
-        for lst in level_data.values():
-            output.append(lst)
+#         output = []
+#         for lst in level_data.values():
+#             output.append(lst)
 
-        return output
+#         return output
 
 
 
@@ -104,3 +104,13 @@ class Solution:
     #         return self.get_current_level(root.left, level-1) and \
     #             self.get_current_level(root.right, level-1)
 
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:

@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <script>
+            // i = 0
+            // while (i < 10){
+            //     console.log(i)
+            //     i++
+            // }
+            // i = 0
+            // while (true){
+            //     console.log(i)
+            //     i++
+            //     if (i == 5){
+            //         break
+            //     }
+            // }
+            // arr = ["tim", "joe", "bill"]
+            // i = 0
+
+            // while (i < arr.length){
+            //     console.log(arr[i])
+            //     i++
+            // }
+
+            // for loop
+            // for (i = 0; i < 10; i++){
+            //     console.log(i)
+            // }
+
+            function findInArray(arr, value){
+                for (i=0; i<arr.length; i++){
+                    if (arr[i] == value){
+                        return true
+                    }
+                
+                }
+                return false
+            }
+
+            arr = [1, 2, 3, 4, 56, "tim", "sudhaioud8"]
+            console.log(findInArray(arr, 5))
+            console.log(findInArray(arr, "tim"))
+
+        </script>
+    </body>
+</html>

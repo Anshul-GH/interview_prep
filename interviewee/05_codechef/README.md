@@ -1,0 +1,1 @@
+https://www.codechef.com/practice?end_rating=999&group=unattempted&hints=0&itm_campaign=newuser&itm_medium=get-started&limit=20&page=0&search=&sort_by=difficulty_rating&sort_order=asc&start_rating=0&tags=&topic=&video_editorial=0&wa_enabled=0

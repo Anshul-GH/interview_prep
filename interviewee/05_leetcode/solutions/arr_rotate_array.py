@@ -37,7 +37,12 @@ class Solution:
             nums.insert(0, nums[-1])
             nums.pop()
         
+    # alternate - incorrect
+    # def rotate_array_by_k(elements,k):
+        # rotate_by = k % len(elements)
+        # return elements[:-rotate_by] + elements[rotate_by:-rotate_by]
+
     # alternate
     def rotate_array_by_k(elements,k):
-        rotate_by = k % len(elements)
-        return elements[:-rotate_by] + elements[rotate_by:-rotate_by]
+        actual_k = k % len(elements)
+        return elements[-actual_k:]+elements[:-actual_k]

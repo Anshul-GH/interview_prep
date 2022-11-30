@@ -42,3 +42,14 @@ class Solution:
             k += 1
         
         return k
+
+# alternate logic
+
+nums = [0,0,1,1,1,2,2,3,3,4]
+len_nums = len(nums)
+distinct_nums = list(set(nums))
+len_distinct = len(distinct_nums)
+len_diff = len_nums - len_distinct
+
+for _ in range(len_diff):
+    distinct_nums.append("_")

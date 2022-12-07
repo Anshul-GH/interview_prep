@@ -18,6 +18,8 @@ class Solution:
             quotient = 1
         elif dividend < divisor:
             quotient = 0
+        elif divisor == 1:
+            quotient = dividend
         else:
             while dividend > divisor:
                 dividend = dividend - divisor

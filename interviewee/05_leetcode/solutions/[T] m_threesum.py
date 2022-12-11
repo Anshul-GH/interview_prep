@@ -62,18 +62,66 @@
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        valid_triplets = []
+    #     valid_triplets = []
 
-        # iterate over all possible triplets
-        len_nums = len(nums)
-        for i in range(len_nums):
-            for j in range(i+1, len_nums):
-                for k in range(j+1, len_nums):
-                    if nums[i] + nums[j] + nums[k] == 0:
-                        triplet = [nums[i], nums[j], nums[k]]
-                        triplet.sort()
-                        if triplet not in valid_triplets:
-                            valid_triplets.append(triplet)
+    #     # iterate over all possible triplets
+    #     len_nums = len(nums)
+    #     for i in range(len_nums):
+    #         for j in range(i+1, len_nums):
+    #             for k in range(j+1, len_nums):
+    #                 if nums[i] + nums[j] + nums[k] == 0:
+    #                     triplet = [nums[i], nums[j], nums[k]]
+    #                     triplet.sort()
+    #                     if triplet not in valid_triplets:
+    #                         valid_triplets.append(triplet)
                         
 
-        return list(valid_triplets)
+    #     return list(valid_triplets)
+
+        # Sort the array
+        nums.sort()
+
+        # Set to store the triplets
+        triplets = set()
+
+        # Iterate through the array, using the current number
+        # as the first number in the triplet
+        for i in range(len(nums)):
+            # Skip over duplicates
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+
+            # Use two pointers to search for the other two numbers
+            # that sum to 0 with the current number
+            left = i + 1
+            right = len(nums) - 1
+            while left < right:
+                # Calculate the sum of the three numbers
+                sum = nums[i] + nums[left] + nums[right]
+
+                # If the sum is 0, we have found a triplet
+                if sum == 0:
+                    # Add the triplet to the set of triplets
+                    triplets.add((nums[i], nums[left], nums[right]))
+
+                    # Skip over duplicates
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
+
+                    # Move the pointers inwards
+                    left += 1
+                    right -= 1
+                elif sum < 0:
+                    # If the sum is less than 0, we need to
+                    # move the left pointer inwards to increase the sum
+                    left += 1
+                else:
+                    # If the sum is greater than 0, we need to
+                    # move the right pointer inwards to decrease the sum
+                    right -= 1
+
+        # Return the set of triplets as a list
+        return list(triplets)
+

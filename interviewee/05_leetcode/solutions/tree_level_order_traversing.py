@@ -104,6 +104,8 @@ Constraints:
     #         return self.get_current_level(root.left, level-1) and \
     #             self.get_current_level(root.right, level-1)
 
+from typing import Optional, List
+from collections import deque
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -112,5 +114,41 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+# class Solution:
+#     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+
+def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    # Edge case: empty tree
+    if root is None:
+        return []
+
+    # Initialize a queue with the root node
+    queue = deque([root])
+    result = []
+
+    # Continue until the queue is empty
+    while queue:
+        # Get the size of the queue, which will determine how many nodes
+        # are at the current level
+        size = len(queue)
+        level = []
+
+        # Process all the nodes at the current level
+        for _ in range(size):
+            # Remove the first node from the queue
+            node = queue.popleft()
+
+            # Add the node's value to the current level list
+            level.append(node.val)
+
+            # Add the node's children to the queue, if they exist
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+        # Add the current level to the result
+        result.append(level)
+
+    # Return the result
+    return result

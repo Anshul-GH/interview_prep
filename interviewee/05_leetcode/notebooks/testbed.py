@@ -1,27 +1,18 @@
-def longestPalindrome(s: str) -> str:
-  n = len(s)
-  dp = [[0] * n for _ in range(n)]
+from typing import List
 
-  # For each substring s[i...j], check if it is a palindrome. If it is,
-  # then update the value of dp[i][j] to be the length of the palindrome.
-  for j in range(n):
-    for i in range(j + 1):
-      if s[i] == s[j] and (j - i <= 1 or dp[i + 1][j - 1] != 0):
-        dp[i][j] = j - i + 1
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        valid_triplets = set()
 
-  # Return the longest palindromic substring by finding the maximum value
-  # in the array dp and then extracting the substring from s.
-  maxLength = 0
-  start = 0
-  end = 0
-  for i in range(n):
-    for j in range(n):
-      if dp[i][j] > maxLength:
-        maxLength = dp[i][j]
-        start = i
-        end = j
-  return s[start:end + 1]
+        # iterate over all possible triplets
+        len_nums = len(nums)
+        for i in range(len_nums):
+            for j in range(i+1, len_nums):
+                for k in range(j+1, len_nums):
+                    valid_triplets.add([nums[i], nums[j], nums[k]])
 
-if __name__ == "__main__":
-    s = input()
-    print(longestPalindrome(s))
+        return list(valid_triplets)
+
+
+# if __name__ == "__main__":
+#     print("Add body to main")

@@ -13,4 +13,4 @@ class Solution:
                 underscores += 1
             counter += 1
 
-        return (len(nums) - underscores)
+        return len(nums) - underscores

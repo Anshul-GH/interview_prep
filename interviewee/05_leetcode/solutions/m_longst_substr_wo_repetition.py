@@ -11,11 +11,7 @@ class Solution:
             if num not in log:
                 max += 1
                 log.append(num)
-                if prev_max < max:
-                    prev_max = max
             else:
-                if prev_max < max:
-                    prev_max = max
                 idx = log.index(num)
                 if idx+1 != len(log):
                     log = log[idx+1:]
@@ -23,6 +19,8 @@ class Solution:
                     log = []
                 log.append(num)
                 max = len(log)
+            if prev_max < max:
+                prev_max = max
 
         return prev_max
         # sstr = []

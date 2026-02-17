@@ -357,3 +357,4 @@ licenses/LICENSES-ui.txt
 # Generated out dir
 
 /out
+*.pdf

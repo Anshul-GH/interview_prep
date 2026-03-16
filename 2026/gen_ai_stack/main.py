@@ -80,33 +80,6 @@ async def rag_query(query: Query):
         "mcp_tools": "jira_tickets, system_status active"
     }
 
-
-# @app.post("/rag/query")
-# async def rag_query(query: Query):
-#     try:
-#         llm = ChatOllama(model="llama3.2", temperature=0)
-#         result = llm.invoke([query.question])
-#         return {"answer": result.content}
-#     except Exception as e:
-#         return {"answer": f"Ollama error: {str(e)}", "fallback": True}
-
-# @app.post("/mcp/tools")
-# async def mcp_tool_call(tool_call: ToolCall):
-#     tools = {
-#         "jira_tickets": {"tickets": ["TICKET-123", "TICKET-124"]},
-#         "system_status": {"status": "healthy"}
-#     }
-#     return tools.get(tool_call.tool_name, {"error": "Unknown tool"})
-
-# @app.get("/health")
-# async def health():
-#     init_rag()
-#     return {
-#         "status": "healthy", 
-#         "rag_ready": _rag_chain is not None,
-#         "ollama_models": ["llama3.2", "mxbai-embed-large", "nomic-embed-text"]
-#     }
-
 @app.get("/health")
 async def health():
     return {"status": "live", "ollama": "llama3.2", "mcp": "ready"}

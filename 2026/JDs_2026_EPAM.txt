@@ -1,0 +1,131 @@
+Job Descriptions
+
+-----------------------------------------------------------------------------------------------------------------
+Engineer
+Principal Financial Group
+
+Must have skills
+Python.Core
+AWS Lambda
+Amazon Web Services
+
+We are looking for an experienced AWS Python Developer to design and implement cloud-native integrations and serverless solutions on AWS. The role focuses on building scalable integration services using AWS Lambda, Python, and API-based architectures, with a strong emphasis on file processing, event-driven workflows, and external system integrations.
+
+You will work closely with solution architects, backend developers, and platform teams to deliver reliable and secure integration components.
+
+
+Key Responsibilities
+
+
+AWS Serverless Development
+
+    Design and implement serverless applications using AWS Lambda and Python
+    Build scalable integration workflows using AWS services such as Lambda, S3, SQS, SNS, and API Gateway
+    Implement event-driven architectures for asynchronous processing
+
+API Development & Integration
+
+    Design and develop REST APIs using Python
+    Integrate with internal and external APIs
+    Build reusable API clients and integration modules
+    Implement API authentication mechanisms (OAuth, API Keys, JWT)
+
+File Processing & Data Integration
+
+    Develop solutions for file ingestion, transformation, and delivery
+    Process files from S3, SFTP, or external systems
+    Implement data transformation pipelines using Python
+    Handle large files and batch processing scenarios
+
+AWS Integration Services
+
+    Implement integration patterns using:
+    AWS Lambda
+    API Gateway
+    S3
+    SQS / SNS
+    EventBridge
+    Step Functions (optional)
+
+Observability & Reliability
+
+    Implement logging and monitoring using CloudWatch
+    Build robust error handling and retry mechanisms
+    Ensure high availability and scalability of integration services
+
+Infrastructure & DevOps
+
+    Work with Infrastructure as Code (Terraform / CloudFormation / CDK)
+    Participate in CI/CD pipeline implementation
+    Ensure secure and compliant deployment of AWS resources
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+Engineer
+Scotiabank FD
+
+Python.Core
+Python
+SQL
+Fenergo
+System Analysis
+
+4 Senior -DevelopersBusiness group: Technolgy team manages the Client Onboarding system for GBM (Global Banking & Markets) business, the application is used by the Global Client Onboarding team to track KYC and jurisdictional regulatory monitoring workflows. We are looking for Senior Developers who are self-starting, results-oriented, highly motivated individuals with great attention to detail and excellent problem-solving skills. A candidate for this role will need to multi-task, lead workstreams and be comfortable to work in a fast paced and agile environment with tight project delivery timelines. Project: The Developer will be a part of a Saas migration project on the current Client Onboarding System. Role: Work with SME's and business partners .Coordinate among BA’s and InfraOps/Networking and other teams to ensure task is complete. Assist with production Defect fixing /solutioning during migration/testing/post migration , to ensure system stability . Assist with the office of monitor requests - defining SQL queries according to business requests.Ensure product features are implemented correctly by working closely with BA's and Other stakeholders.Serves as a Delivery SPOC/ lead for respective project workstreams,to ensure that milestones and timelines are met.Create design documents into technical stories and technical tasks.Review and understand defect and make code changes to enhance the application.Provide system analysis, object-oriented design / programming, technical documentation, and support for existing and new applications and systems.Perform coding, unit testing, debugging, documenting, and implementing and deploying of applications and scripts.Participate in regular code reviews for release activities.Participate in production issue analysis and perform root cause analysis for production issues and implementation issues.Candidate Requirements:Must have 8 - 10 years of technical working experience in systems analysis, design, development, unit testing, and debugging i.e Minimim 5-6 years in .Net(4.7+)/C# and or 4-5 years in Core Python (Python framework 3.x).Must have system integration experience-i.e developing/maintaining services and components , external-internal API,s file transfers.Proficient in SQL & relational databases.Technical working experience in the use of Bit Bucket, GIT, Jira, Confluence, or similar tool(s) for building Continuous Integration/Continuous Delivery (CI/CD) pipelines.Technical working knowledge of Web Services, XML/SOAP/REST Tools,and other (IDEs) .Technical working knowldege /Experience on projects that involve Application Security like oAuth2 and/or SSO.Technical working Knowledge with ETL/ELT frameworks and event streaming (Kafka or equivalent) and Job Schedulers like TIDAL/Cron/Airflow.Nice to have - Working knowledge of Postman, WinSCP (Windows Secure Copy); PuTTY SCP (PSCP) or other similar tools.Microsoft Azure Cloud or Google Cloud knowledge would be an asset.Serves as a Delivery SPOC/ lead for respective project workstreams,to ensure that milestones and timelines are met.Contributes to an environment of continuous learning, including the sharing of experience and learning across team members, peers, Scotia partners, and management as appropriate.Bachelor’s Degree, in computer engineering or information science.Nice to have Fenergo Implementation experience
+
+-----------------------------------------------------------------------------------------------------------------
+Engineer
+Gunvor US
+
+Data Integration
+Django
+Docker
+Python
+FAST
+Kafka Connect
+Snowflake
+
+Global trading client is seeking to develop a tool for algorithmic trading of US electricity. CLient trader/SME claims to have built a similar platform twice before and to understand requirements and architecture well.
+
+
+This role will be responsible for the design, development, and maintenance of data access services, APIs, integration layers, and lightweight front-end interfaces that expose Group data products to consuming systems and users.
+
+
+This role ensures that curated data is discoverable, governed, and seamlessly integrated into the trading ecosystem, supporting both real-time and asynchronous architectures.
+
+ 
+
+This profile anchors the distribution and interaction layer of the data platform:
+
+    APIs make data accessible, controlled, and reliable.
+    Integration services connect the platform to the broader trading architecture.
+    Django/front-end tools provide operational visibility and user-level interaction.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------

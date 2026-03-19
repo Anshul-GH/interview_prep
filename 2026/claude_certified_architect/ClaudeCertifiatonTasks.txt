@@ -1,0 +1,262 @@
+B - [Claude Certification] MCP-01 – Anthropic MCP Overview (Single Article)
+
+Objective:
+Understand at a high level what MCP is and why it exists.
+
+Links:
+- https://www.anthropic.com/news/model-context-protocol
+
+Steps:
+1. Read the article once end-to-end (20–30 min).
+2. In your notes, write:
+   - 3–5 bullet points on “What problem MCP solves”.
+   - 3–5 bullet points on “Key concepts or components that stood out”.
+3. Write 1 multiple-choice question (MCQ) about the main purpose of MCP.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+B - [Claude Certification] MCP-02 – MCP Spec: Roles (Host, Client, Server)
+
+Objective:
+Get clear on host/client/server roles in MCP.
+
+Links:
+- https://modelcontextprotocol.io/specification/2025-11-25
+
+Steps:
+1. Skim only the intro and sections that define host, client, and server (20–25 min).
+2. In your notes, write:
+   - 1–2 sentences each for host, client, server in your own words.
+   - 1 concrete example from your world for each role.
+3. Write 2 MCQs where the answer is choosing the correct role (host vs client vs server).
+
+
+B - [Claude Certification] MCP-03 – Tools vs Resources vs Prompts (Concept Only)
+
+Objective:
+Be able to define tools, resources, and prompts at a conceptual level.
+
+Links:
+- https://anthropic.skilljar.com/introduction-to-model-context-protocol
+
+Steps:
+1. Read only the part of the course page that explains tools, resources, and prompts (20–25 min).
+2. In your notes:
+   - Write a 1–2 sentence definition for each (tool, resource, prompt).
+   - Add one example from your work for each.
+3. Write 1 MCQ: given a capability, pick tool vs resource vs prompt.
+
+
+B - [Claude Certification] MCP-04 – Tools vs Resources vs Prompts (Mapping Exercise)
+
+Objective:
+Practice mapping real capabilities to MCP primitives.
+
+Links:
+- (Reuse) https://anthropic.skilljar.com/introduction-to-model-context-protocol
+
+Steps:
+1. Choose one project you’ve built (e.g., scraper, CI tool) (5 min).
+2. List 5–7 capabilities from that project (10–15 min).
+3. For each capability, assign: tool, resource, or prompt, and write one short justification per row (15–25 min).
+4. Optional if time: turn 1–2 rows into MCQs.
+
+
+B - [Claude Certification] TOOL-01 – Read Agent SDK Tool Definition Example
+
+Objective:
+See how tools are actually defined in the Agent SDK.
+
+Links:
+- https://platform.claude.com/docs/en/agent-sdk/python
+
+Steps:
+1. Locate a code example in the docs where a tool is defined with name, description, and input_schema (15–20 min).
+2. Copy that example into your notes and annotate:
+   - What each field means (name, description, schema).
+   - How Claude knows when to use the tool.
+3. Write 1 MCQ about which field (name vs description vs schema) primarily drives tool selection.
+
+
+B - [Claude Certification] TOOL-02 – Rewrite One Generic Tool into Two Specific Ones
+
+Objective:
+Practice splitting a vague tool into focused tools with clear descriptions.
+
+Links:
+- (Reference only) https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
+
+Steps:
+1. Pick one generic tool name, e.g., "analyze_document" (5 min).
+2. Design TWO more specific tools from it (25–30 min):
+   - For each new tool, write:
+     - name
+     - 1–3 sentence description (purpose and example input)
+     - a short list of input fields (no need for full JSON).
+3. Write 1 MCQ that shows both tools and asks which to use in a given scenario.
+
+
+B - [Claude Certification] SCHEMA-01 – Design JSON Schema for process_refund
+
+Objective:
+Create a clean JSON Schema for one concrete tool.
+
+Links:
+- https://modelcontextprotocol.io/specification/2025-11-25
+
+Steps:
+1. Define, in plain English, what process_refund should do and what arguments it needs (10–15 min).
+2. Write a JSON Schema draft that includes (25–30 min):
+   - Required: order_id (string), amount (number), currency (string).
+   - Enum: reason with values like DAMAGED, CUSTOMER_REMORSE, OTHER.
+   - Optional: other_reason_detail (string, used when reason=OTHER).
+3. If time left, add a short description field to each property.
+
+
+B - [Claude Certification] SCHEMA-02 – Design JSON Schema for search_tickets
+
+Objective:
+Design another schema to reinforce the pattern.
+
+Links:
+- https://modelcontextprotocol.io/specification/2025-11-25
+
+Steps:
+1. Define what search_tickets should do and likely filters (10–15 min).
+2. Write a JSON Schema draft (25–30 min) with fields like:
+   - query (string, optional)
+   - status (enum: OPEN, CLOSED, PENDING)
+   - page (integer, default 1)
+   - page_size (integer)
+   - created_after (string, date format, optional).
+3. Write 1 MCQ about when to use an enum vs a free-text field.
+
+
+B - [Claude Certification] ERROR-01 – Define Error Categories with Examples
+
+Objective:
+Internalize the four key error categories with concrete examples.
+
+Links:
+- https://modelcontextprotocol.io/specification/2025-11-25
+
+Steps:
+1. In your notes, create headings for:
+   - TRANSIENT, VALIDATION, BUSINESS, PERMISSION (5–10 min).
+2. For each heading, write:
+   - 1–2 real-world examples from your systems.
+   - 1 sentence on whether the agent should retry or not (20–30 min).
+3. Write 1 MCQ asking which category fits a described failure.
+
+
+B - [Claude Certification] ERROR-02 – Design a Common Error Envelope
+
+Objective:
+Create a reusable error structure that tools can return.
+
+Links:
+- (Optional reference) https://modelcontextprotocol.io/specification/2025-11-25
+
+Steps:
+1. In your notes, define a JSON-like error object with fields:
+   - isError (bool), errorCategory (enum), isRetryable (bool),
+     message (string), details (object, optional) (20–25 min).
+2. For TWO tools only (e.g., lookup_order, process_refund), create one concrete error payload each (15–20 min).
+3. If time: write 1 MCQ about which field the agent should look at to decide on retry vs escalate.
+
+
+B - [Claude Certification] DIST-01 – Design Tool Sets for 3 Agents
+
+Objective:
+Practice assigning minimal tool sets to specialized agents.
+
+Links:
+- https://platform.claude.com/docs/en/agent-sdk/python
+
+Steps:
+1. Choose a simple scenario (e.g., multi-agent research) (5 min).
+2. Define 3 agents (15–20 min):
+   - Web Researcher
+   - Document Analyzer
+   - Synthesizer
+3. For each agent, list:
+   - The 2–4 tools they can use.
+   - 1–2 tools they explicitly should NOT have (and why) (20–25 min).
+
+
+B - [Claude Certification] DIST-02 – Write MCQs on Tool Distribution
+
+Objective:
+Reinforce good vs bad tool distributions via questions.
+
+Links:
+- (Reference) https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
+
+Steps:
+1. Based on your DIST-01 notes, write 3 MCQs (30–40 min):
+   - Each question shows one good and one bad tool-assignment plan.
+2. For each, mark the correct answer and a 1-sentence explanation of why the other is worse (10–15 min).
+
+
+B - [Claude Certification] CFG-01 – Read Claude Code Settings (MCP Part Only)
+
+Objective:
+See where MCP servers and config live in Claude Code.
+
+Links:
+- https://code.claude.com/docs/en/settings
+
+Steps:
+1. Read only the parts of the settings docs that mention MCP servers and configuration files (20–30 min).
+2. In your notes, write:
+   - Where global/user settings go.
+   - Where project-specific settings go.
+3. Write 1 MCQ asking where you would define a project-specific MCP server.
+
+
+B - [Claude Certification] CFG-02 – Sketch One MCP Server Config
+
+Objective:
+Draft a minimal project-level MCP server configuration.
+
+Links:
+- https://code.claude.com/docs/en/settings
+
+Steps:
+1. Pick one hypothetical MCP server (e.g., "github" or "internal-db") (5–10 min).
+2. Draft a minimal JSON or YAML snippet that configures:
+   - name, command/URL, and any required env vars (25–30 min).
+3. Write 1 sentence on whether this belongs in a user-level or project-level config file.
+
+
+B - [Claude Certification] CLAUDEMD-01 – Read One CLAUDE.md Example
+
+Objective:
+Understand the structure and purpose of CLAUDE.md.
+
+Links:
+- https://www.claudecode101.com/en/tutorial/configuration/claude-md
+
+Steps:
+1. Read one full CLAUDE.md example from the article (20–30 min).
+2. In your notes, list:
+   - The main sections (e.g., project overview, guidelines).
+   - 3 patterns you like and might copy into your own projects.
+3. Write 1 MCQ about what kind of content belongs in CLAUDE.md vs in code.
+
+
+B - [Claude Certification] CLAUDEMD-02 – Draft a Minimal Tools Section in CLAUDE.md
+
+Objective:
+Practice writing a short tools section that guides behavior.
+
+Links:
+- (Reference) https://www.turbodocx.com/resources/claude-md-guide
+
+Steps:
+1. For a pretend repo, write a small “Tools & How To Use Them” section (25–30 min):
+   - List 2–3 tools by name with 1 sentence each on when to use them.
+2. Add a short “Avoid” bullet list for dangerous tool behaviors (10–15 min).
+3. If time: write 1 MCQ about which change to CLAUDE.md best fixes a mis-use of a tool.

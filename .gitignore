@@ -358,3 +358,5 @@ licenses/LICENSES-ui.txt
 
 /out
 *.pdf
+interviewee/21_docker_kubernetes/L07-02 Multi Stage Build/obj/Debug/net6.0/Code.AssemblyInfo.cs
+interviewee/21_docker_kubernetes/L07-02 Multi Stage Build/obj/Debug/net6.0/Code.AssemblyInfoInputs.cache

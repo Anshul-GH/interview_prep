@@ -1,0 +1,39 @@
+Certified Claude Architect - Domain Wise Preparation
+——————————————————————————-
+
+Domain 1: Agentic Architecture & Orchestration (27%)
+Topics: agent loop (stop_reason), task decomposition, multi-agent (coordinator/subagents), hooks, session fork/resume.
+Materials:
+- https://platform.claude.com/docs/en/agent-sdk/overview
+- https://nader.substack.com/p/the-complete-guide-to-building-agents
+- https://www.the-ai-corner.com/p/claude-certified-architect-curriculum-2026
+
+Domain 2: Tool Design & MCP Integration (18%)
+Topics: tool design (name/desc/schema), MCP (tools/resources/prompts), errors (category/retryable), tool distribution.
+Materials:
+- https://modelcontextprotocol.io/specification/2025-11-25
+- https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
+- https://www.certsafari.com/anthropic/claude-certified-architect
+
+Domain 3: Claude Code Configuration & Workflows (20%)
+Topics: CLAUDE.md, settings (.claude.json/MCP), plan/direct mode, built-in tools (Read/Write/Bash), CI/CD.
+Materials:
+- https://code.claude.com/docs/en/settings
+- https://www.youtube.com/watch?v=vizgFWixquE
+- https://linas.substack.com/p/claudearchitect
+
+Domain 4: Prompt Engineering & Structured Output (20%)
+Topics: few-shot/chaining, JSON schemas (required/enum/nullable), validation/retries, batch.
+Materials:
+- https://platform.claude.com/docs/en/prompt-engineering
+- https://www.datastudios.org/post/how-to-become-a-claude-certified-architect-current-path-exam-structure-study-areas-and-what-is-...
+- https://flashgenius.net/blog-article/a-guide-to-the-claude-certified-architect-foundations-certification
+
+Domain 5: Context Management & Reliability (15%)
+Topics: long context (summarization), escalation/HITL, provenance, multi-agent errors, scratchpads.
+Materials:
+- https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- https://gist.github.com/tvytlx/2e0c4c823e56e1ddcce8f0634d1f36e6
+- https://www.lowcode.agency/blog/how-to-become-claude-certified-architect
+
+Pro tip: Read doc → build example → write 3 MCQs. Repeat 2-3x per domain.

@@ -5,7 +5,8 @@ async function main() {
     prompt: "What files are in this directory?",
     options: {
       // model: "opus",
-      model: "qwen2.5-coder:7b",
+      // model: "qwen2.5-coder:7b",
+      model: "qwen2.5-coder-7b-instruct-mlx",
       allowedTools: ["Glob", "Read"],
       maxTurns: 250
     }

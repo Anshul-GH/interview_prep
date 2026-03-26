@@ -1,4 +1,34 @@
 Job Descriptions
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+Engineer
+TGS
+TGS-DMDV
+Office occasionally
+Billable
+
+Requirements
+
+Full-Stack Development
+
+Python (FastAPI, Flask), REST APIs. Comfortable owning a feature end-to-end from database to UI.
+
+Applied AI / LLMs
+
+Hands-on experience with LLM APIs (Claude, GPT, Gemini). RAG pipelines. 
+
+Data Engineering
+
+SQL proficiency, experience building data pipelines, familiarity with data warehouses. Able to write text-to-SQL agents and work with structured + unstructured data.
+
+Cloud & Infrastructure
+
+Experience with cloud platforms (GCP preferred, AWS/Azure acceptable). Comfortable with containerization (Docker), CI/CD, and deploying production services.
+
+Communication
+
+Can explain technical decisions to non-technical stakeholders. Comfortable working directly with operations teams and product owners to translate business needs into technical solutions.
 
 -----------------------------------------------------------------------------------------------------------------
 Engineer

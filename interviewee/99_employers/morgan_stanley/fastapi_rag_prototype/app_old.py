@@ -3,22 +3,14 @@ from pydantic import BaseModel
 from pathlib import Path
 import time
 import re
-import ollama
 
-app = FastAPI(title="Mini RAG Prototype with Ollama")
+app = FastAPI(title="Mini RAG Prototype")
 
 DOCS_DIR = Path("docs")
 CHUNKS = []
 
-# Change this to whatever model you pulled, e.g. "llama3", "llama2", "mistral"
-# OLLAMA_MODEL = "llama3.2:latest"
-# OLLAMA_MODEL = "llama3.2:latest"
-OLLAMA_MODEL = "phi3:mini"
-
-
 class AskRequest(BaseModel):
     question: str
-
 
 def load_documents():
     docs = []
@@ -26,7 +18,6 @@ def load_documents():
         text = path.read_text(encoding="utf-8")
         docs.append({"source": path.name, "text": text})
     return docs
-
 
 def chunk_text(text, chunk_size=500, overlap=100):
     chunks = []
@@ -36,7 +27,6 @@ def chunk_text(text, chunk_size=500, overlap=100):
         chunks.append(text[start:end])
         start += chunk_size - overlap
     return chunks
-
 
 def build_chunks():
     all_chunks = []
@@ -48,10 +38,8 @@ def build_chunks():
             })
     return all_chunks
 
-
 def tokenize(text):
     return set(re.findall(r"\b[a-zA-Z0-9_]+\b", text.lower()))
-
 
 def retrieve(question, top_k=3):
     q_tokens = tokenize(question)
@@ -70,43 +58,20 @@ def retrieve(question, top_k=3):
 def generate_answer(question, retrieved_chunks):
     if not retrieved_chunks:
         return "I could not find relevant context in the loaded documents."
-
-    context_blocks = []
-    for c in retrieved_chunks[:2]:  # only top 2 chunks for now
-        snippet = c["content"][:400]  # shorten each chunk
-        context_blocks.append(f"Source: {c['source']}\n{snippet}")
-    context = "\n\n".join(context_blocks)
-
-    user_prompt = f"""
-You are an assistant that answers questions using ONLY the context provided below.
-If the answer is not in the context, say you do not have enough information.
-Keep the answer short and clear.
-
-Context:
-{context}
-
-Question:
-{question}
-""".strip()
-
-    try:
-        response = ollama.chat(
-            model=OLLAMA_MODEL,
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant for model risk and validation questions."},
-                {"role": "user", "content": user_prompt},
-            ],
-        )
-        return response["message"]["content"]
-    except Exception as e:
-        return f"Ollama call failed: {str(e)}"
-
+    context_summary = "\n\n".join(
+        f"Source: {c['source']}\n{c['content']}" for c in retrieved_chunks
+    )
+    return (
+        "Based on the retrieved documents, here is a grounded response:\n\n"
+        f"{context_summary}\n\n"
+        f"Question: {question}\n\n"
+        "In a full version, this context would be passed to an LLM to produce a concise final answer."
+    )
 
 @app.on_event("startup")
 def startup_event():
     global CHUNKS
     CHUNKS = build_chunks()
-
 
 @app.post("/ask")
 def ask(req: AskRequest):
@@ -120,6 +85,5 @@ def ask(req: AskRequest):
         "answer": answer,
         "sources": list({c["source"] for c in retrieved}),
         "retrieved_chunks": retrieved,
-        "latency_ms": latency_ms,
-        "model": OLLAMA_MODEL,
+        "latency_ms": latency_ms
     }

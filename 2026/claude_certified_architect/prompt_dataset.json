@@ -1,34 +1,37 @@
-{
-  "tasks": [
-    {
-      "task": "Create a Python function that takes a list of strings as input and returns the length of the longest string in the list."
-    },
-    {
-      "task": "Generate a JSON object representing an AWS IAM policy with the necessary permissions to access S3."
-    },
-    {
-      "task": "Write a regular expression that matches any string containing the phrase 'password' but not 'admin'."
-    },
-    {
-      "task": "Create a Python function that takes a dictionary of user credentials and returns a set of unique usernames."
-    },
-    {
-      "task": "Generate a JSON object representing an AWS CloudWatch metric with the name 'EC2InstanceCPUUtilization' and unit 'Percent'."
-    },
-    {
-      "task": "Write a regular expression that matches any string containing only alphanumeric characters and has a length of exactly 10 characters."
-    },
-    {
-      "task": "Create a Python function that takes an AWS S3 bucket name as input and returns the URL of the bucket's homepage."
-    },
-    {
-      "task": "Generate a JSON object representing an AWS Lambda function with the necessary environment variables to process HTTP requests."
-    },
-    {
-      "task": "Write a regular expression that matches any string containing the phrase 'https://www.example.com' but not 'http://'."
-    },
-    {
-      "task": "Create a Python function that takes a list of integers as input and returns the sum of all even numbers in the list."
-    }
-  ]
-}
+[
+  {
+    "task": "Given a list of AWS IAM user IDs, write a Python function that filters out users with insufficient permissions.",
+    "format": "python",
+    "solution_criteria": "The function should return a list of user IDs with the least amount of access and the most comprehensive permissions."
+  },
+  {
+    "task": "Validate an AWS JSON Web Token (JWT) to ensure it contains the correct expiration date and audience.",
+    "format": "regex",
+    "solution_criteria": "The token should pass validation without any errors or warnings"
+  },
+  {
+    "task": "Write a Python function that converts an AWS S3 bucket's metadata into a standardized JSON format.",
+    "format": "python",
+    "solution_criteria": "The output JSON should include the correct bucket name, creation date, and region."
+  },
+  {
+    "task": "Extract specific fields from an AWS API Gateway REST API definition in YAML format using regular expressions.",
+    "format": "regex",
+    "solution_criteria": "The function should return a dictionary with the extracted values for method, resource, and HTTP method."
+  },
+  {
+    "task": "Given an AWS CloudWatch Events event, write a Python script that extracts the event type, source ARN, and ID.",
+    "format": "python",
+    "solution_criteria": "The output should be in a dictionary format with accurate event information."
+  },
+  {
+    "task": "Validate an AWS IAM policy document to ensure it contains specific permissions for users.",
+    "format": "regex",
+    "solution_criteria": "The policy document should pass validation without any errors or warnings."
+  },
+  {
+    "task": "Create a Python function that returns the top 10 most expensive AWS services based on historical usage data.",
+    "format": "python",
+    "solution_criteria": "The output should be a dictionary with the service names and their total costs."
+  }
+]

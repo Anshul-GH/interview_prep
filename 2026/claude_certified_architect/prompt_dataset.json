@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "task": "Create a Python function that takes a list of strings as input and returns the length of the longest string in the list."
+    },
+    {
+      "task": "Generate a JSON object representing an AWS IAM policy with the necessary permissions to access S3."
+    },
+    {
+      "task": "Write a regular expression that matches any string containing the phrase 'password' but not 'admin'."
+    },
+    {
+      "task": "Create a Python function that takes a dictionary of user credentials and returns a set of unique usernames."
+    },
+    {
+      "task": "Generate a JSON object representing an AWS CloudWatch metric with the name 'EC2InstanceCPUUtilization' and unit 'Percent'."
+    },
+    {
+      "task": "Write a regular expression that matches any string containing only alphanumeric characters and has a length of exactly 10 characters."
+    },
+    {
+      "task": "Create a Python function that takes an AWS S3 bucket name as input and returns the URL of the bucket's homepage."
+    },
+    {
+      "task": "Generate a JSON object representing an AWS Lambda function with the necessary environment variables to process HTTP requests."
+    },
+    {
+      "task": "Write a regular expression that matches any string containing the phrase 'https://www.example.com' but not 'http://'."
+    },
+    {
+      "task": "Create a Python function that takes a list of integers as input and returns the sum of all even numbers in the list."
+    }
+  ]
+}

@@ -1,207 +1,190 @@
 [
   {
-    "output": "Based on the athlete's information, I've created a one-day meal plan that meets their dietary restrictions and goals.\n\n**Athlete Information:**\n\n* Height: 175 cm\n* Weight: 70 kg\n* Goal: lose 5kg in 1 month (caloric deficit of 500 calories/day)\n* Dietary restrictions: vegetarian\n\n**Daily Calorie Intake:** 1800 calories\n\n**Macro Breakdown:**\n\n* Protein: 120g\n* Fat: 60g\n* Carbohydrates: 220g\n\n**Meal Plan:**\n\n**Breakfast (7:00 am)**\n\n* Oatmeal with almond milk, banana, and walnuts\n\t+ 250g oatmeal cooked in 500ml water\n\t+ 100g banana, sliced\n\t+ 20g chopped walnuts\n\t+ 10g almonds, ground for added crunch\n\n**Mid-Morning Snack (10:00 am)**\n\n* Carrot sticks with hummus dip\n\t+ 50g carrot sticks\n\t+ 40g hummus dip made from chickpeas and lemon juice\n\n**Lunch (12:30 pm)**\n\n* Whole grain pita stuffed with roasted vegetables and quinoa\n\t+ 120g cooked quinoa\n\t+ 50g roasted bell peppers, sliced\n\t+ 20g roasted zucchini, sliced\n\t+ 10g chopped fresh parsley\n\t+ 2 whole wheat pita breads (60g)\n\n**Mid-Afternoon Snack (3:30 pm)**\n\n* Apple slices with almond butter\n\t+ 100g apple, sliced\n\t+ 15g almond butter\n\n**Dinner (6:00 pm)**\n\n* Lentil soup with whole grain bread and a side salad\n\t+ 200g cooked lentils\n\t+ 20g diced onion\n\t+ 10g diced carrots\n\t+ 2 slices of whole wheat bread (30g)\n\t+ 100g mixed greens salad with 5g balsamic vinaigrette\n\n**Evening Snack (8:00 pm)**\n\n* Greek yogurt with berries and walnuts\n\t+ 150g Greek yogurt\n\t+ 20g mixed berries (fresh or frozen)\n\t+ 10g chopped walnuts\n\n**Budget-Friendly Tips:**\n\n1. Buy in bulk: Oats, quinoa, lentils, and almonds are cost-effective when purchased in larger quantities.\n2. Plan meals around seasonal produce: Fresh fruits and vegetables are cheaper during peak seasons.\n3. Use herbs and spices for flavor instead of salt or sugar: This reduces added sodium and sugar content.\n\nThis meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates, while staying within the athlete's dietary restrictions and calorie goals. Remember to stay hydrated by drinking plenty of water throughout the day!",
+    "output": "\"renewable energy sources\", \"climate change\", \"solar power\", \"fossil fuels\", \"technical challenges\", \"material sourcing\", \"production costs\", \"wind energy\", \"intermittency\", \"policy frameworks\", \"regulation\", \"innovation\", \"economies of scale\", \"policy\", \"progress\", \"comprehensive approach\"",
     "test_case": {
       "prompt_inputs": {
-        "height": "175",
-        "weight": "70",
-        "goal": "lose 5kg in 1 month",
-        "restrictions": "vegetarian"
+        "content": "The shift towards renewable energy sources has garnered significant attention in recent years, with proponents arguing that it is crucial for mitigating climate change. Solar power, in particular, has emerged as a promising alternative to fossil fuels. Despite the environmental benefits, solar panel manufacturing poses several technical challenges, including material sourcing and production costs. In contrast, wind energy has seen remarkable advancements in technology, with innovations like larger turbines and more efficient blades increasing its competitiveness. However, the intermittency of wind power remains a significant hurdle to widespread adoption. Moreover, policy frameworks play a critical role in shaping the trajectory of renewable energy development. Effective regulation can foster innovation and economies of scale, while inadequate policies may hinder progress. Ultimately, a comprehensive approach that addresses all these aspects is necessary for realizing the full potential of renewable energy."
       },
       "solution_criteria": [
-        "Total daily calories <= 1700",
-        "Daily protein intake >= 1.6g/kg body weight",
-        "Includes at least 3 servings of complex carbohydrates and 2 servings of healthy fats"
+        "Contains exactly 3 topics (solar power economics, wind turbine technology, policy implications)"
       ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with a limited ingredient budget ($5/day)"
-    },
-    "score": 7,
-    "reasoning": "While the solution meets most mandatory requirements, there are some notable areas for improvement. The daily caloric intake is slightly above the recommended limit, and protein intake could be higher. Additionally, some meal options lack specific serving sizes or weights."
-  },
-  {
-    "output": "Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose weight.\n\n**Athlete Information:**\n\n* Height: 175 cm (5'9\")\n* Weight: 65 kg (143 lbs)\n* Goal: Lose weight\n* Dietary restrictions: Vegetarian\n\n**Daily Calorie Intake:**\nTo support weight loss, the daily calorie intake for this athlete is approximately 1800 calories.\n\n**Macronutrient Breakdown:**\n\n* Protein: 1.6 grams/kg body weight = 104g ( approx. 20% of total calories)\n* Fat: 0.5g/kg body weight = 32g (approx. 15% of total calories)\n* Carbohydrates: 2-3 grams/kg body weight = 130g (approx. 60% of total calories)\n\n**Meal Plan:**\n\n**Breakfast (6:00 am)**\n\n* Oatmeal with almond milk, banana, and walnuts\n\t+ 250g oatmeal cooked with 150ml water\n\t+ 120g almond milk\n\t+ 100g sliced banana\n\t+ 20g chopped walnuts\n\t+ 10g honey (optional)\n\n**Mid-Morning Snack (10:00 am)**\n\n* Carrot sticks with hummus (60g)\n\t+ 100g carrot sticks\n\t+ 50g hummus\n\n**Lunch (12:30 pm)**\n\n* Whole-grain wrap with avocado, lettuce, tomato, and chickpeas\n\t+ 150g whole-grain wrap\n\t+ 40g mashed avocado\n\t+ 20g chopped lettuce\n\t+ 25g sliced tomato\n\t+ 100g cooked chickpeas\n\t+ 10g low-fat yogurt\n\n**Mid-Afternoon Snack (3:30 pm)**\n\n* Apple slices with almond butter (80g)\n\t+ 150g apple slices\n\t+ 30g almond butter\n\n**Dinner (6:30 pm)**\n\n* Quinoa and vegetable stir-fry with tofu\n\t+ 150g cooked quinoa\n\t+ 100g mixed vegetables (bell peppers, broccoli, carrots) cooked in 20g coconut oil\n\t+ 50g cubed firm tofu\n\t+ 10g soy sauce (optional)\n\n**Before Bed Snack (9:00 pm)**\n\n* Greek yogurt with berries and chia seeds (60g)\n\t+ 100g Greek yogurt\n\t+ 30g mixed berries\n\t+ 10g chia seeds\n\n**Total Daily Intake:**\n\n* Calories: 1785\n* Protein: 104g\n* Fat: 32g\n* Carbohydrates: 130g\n\nThis meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while meeting the athlete's dietary restrictions. The portion sizes are based on the athlete's individual needs, and the calorie intake is carefully calculated to support weight loss.",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "65",
-        "goal": "lose weight",
-        "restrictions": "vegetarian"
-      },
-      "solution_criteria": [
-        "Total daily caloric intake is within 10% of the athlete's maintenance level",
-        "The meal plan includes a balanced mix of protein, healthy fats, and complex carbohydrates",
-        "At least three servings of fruits or vegetables are included in each day's meals"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with meal planning for specific dietary needs (e.g. vegan, gluten-free)"
-    },
-    "score": 8,
-    "reasoning": "While the solution meets most of the mandatory requirements, it falls short in providing a calorie intake that supports weight loss. However, it does provide a balanced mix of protein, healthy fats, and complex carbohydrates."
-  },
-  {
-    "output": "Based on the athlete's information, here is a one-day meal plan that meets their dietary restrictions:\n\n**Breakfast (7:00 am)**\n\n* Gluten-free oatmeal with almond milk, banana, and walnuts\n\t+ 250g gluten-free oats\n\t+ 200ml almond milk\n\t+ 1 medium banana (100g)\n\t+ 20g chopped walnuts\n\tTotal Calories: 350, Protein: 10g, Fat: 15g, Carbohydrates: 45g\n\n**Mid-Morning Snack (10:00 am)**\n\n* Apple slices with almond butter\n\t+ 1 medium apple (120g)\n\t+ 20g almond butter\n\tTotal Calories: 150, Protein: 4g, Fat: 16g, Carbohydrates: 15g\n\n**Lunch (12:30 pm)**\n\n* Quinoa and black bean salad with avocado and mixed greens\n\t+ 100g cooked quinoa\n\t+ 200g cooked black beans\n\t+ 50g diced avocado\n\t+ 20g chopped fresh parsley\n\t+ 10g olive oil and lemon juice dressing (approximate)\n\tTotal Calories: 400, Protein: 15g, Fat: 10g, Carbohydrates: 40g\n\n**Pre-Workout Snack (2:30 pm)**\n\n* Energy bar made from gluten-free oats, nuts, and dried fruits\n\t+ 1 energy bar (approximately 100g)\n\tTotal Calories: 200, Protein: 5g, Fat: 8g, Carbohydrates: 25g\n\n**Post-Workout Snack (4:00 pm)**\n\n* Smoothie bowl with almond milk, banana, spinach, and chia seeds\n\t+ 250ml almond milk\n\t+ 1 medium banana (100g)\n\t+ 20g frozen spinach\n\t+ 10g chia seeds\n\tTotal Calories: 250, Protein: 5g, Fat: 10g, Carbohydrates: 35g\n\n**Dinner (6:30 pm)**\n\n* Grilled tofu with roasted vegetables and quinoa\n\t+ 100g grilled tofu\n\t+ 100g mixed vegetables (such as broccoli, carrots, and bell peppers)\n\t+ 100g cooked quinoa\n\tTotal Calories: 300, Protein: 20g, Fat: 10g, Carbohydrates: 30g\n\n**Evening Snack (8:30 pm)**\n\n* Herbal tea with a handful of gluten-free almonds\n\t+ 1 ounce (28g) gluten-free almonds\n\tTotal Calories: 160, Protein: 6g, Fat: 14g, Carbohydrates: 4g\n\nTotal Daily Intake:\n\n* Calories: 2100\n* Protein: 80g\n* Fat: 83g\n* Carbohydrates: 220g\n\nThis meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates to support the athlete's goals of losing weight while maintaining energy levels. It also meets their dietary restrictions of being vegetarian and gluten-free.",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "70",
-        "goal": "lose 5 kg in 3 months",
-        "restrictions": "vegetarian and gluten-free"
-      },
-      "solution_criteria": [
-        "Contains a balanced macronutrient distribution (20-30% protein, 40-50% carbohydrates, 25-35% fat)",
-        "Includes at least 2 servings of fruits and vegetables per day",
-        "Has a daily calorie intake between 1500-2000 calories"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with a single-word ingredient"
-    },
-    "score": 7,
-    "reasoning": "While the solution provides a comprehensive meal plan, it falls short in terms of calorie and macronutrient balance. However, it meets most mandatory requirements and includes essential nutrients."
-  },
-  {
-    "output": "Based on the athlete's dietary restrictions and goals, I've created a one-day meal plan that meets their needs.\n\n**Daily Calorie Intake:**\nTo lose 5kg in 1 month, the athlete aims to create a calorie deficit of around 500-750 calories per day. Based on their height and weight, their daily calorie intake is approximately 1800 calories.\n\n**Macronutrient Breakdown:**\n\n* Protein: 120g (1.8g/kg body weight)\n* Fat: 70g (10% of total calories)\n* Carbohydrates: 220g (30% of total calories)\n\n**Meal Plan:**\n\n**Breakfast (7:00 am, 400 calories)**\n\n* Gluten-free oatmeal with almond milk, banana, and walnuts\n\t+ 250g oats\n\t+ 200ml almond milk\n\t+ 100g banana\n\t+ 30g walnuts\n\n**Mid-Morning Snack (10:00 am, 150 calories)**\n\n* Fresh fruit salad with berries, apple, and citrus fruits\n\t+ 150g mixed berries\n\t+ 50g apple\n\t+ 25g citrus fruits\n\n**Lunch (12:30 pm, 500 calories)**\n\n* Quinoa and black bean salad with roasted vegetables\n\t+ 200g cooked quinoa\n\t+ 100g cooked black beans\n\t+ 150g mixed roasted vegetables (such as broccoli, bell peppers, and carrots)\n\t+ 10g olive oil\n\t+ 5g lemon juice\n\n**Mid-Afternoon Snack (3:30 pm, 150 calories)**\n\n* Hummus and carrot sticks with gluten-free crackers\n\t+ 50g hummus\n\t+ 100g carrot sticks\n\t+ 20g gluten-free crackers\n\n**Dinner (6:00 pm, 500 calories)**\n\n* Grilled tofu with roasted sweet potatoes and steamed green beans\n\t+ 150g grilled tofu\n\t+ 150g roasted sweet potatoes\n\t+ 50g steamed green beans\n\t+ 10g olive oil\n\n**Before Bed Snack (9:00 pm, 100 calories)**\n\n* Herbal tea with almond milk and a handful of almonds\n\t+ 200ml almond milk\n\t+ 5g herbal tea\n\t+ 25g almonds\n\n**Total Daily Intake:**\n\n* Calories: 1800\n* Protein: 120g\n* Fat: 70g\n* Carbohydrates: 220g\n\nThis meal plan meets the athlete's dietary restrictions and provides a balanced mix of protein, fat, and carbohydrates to support their weight loss goal. The portion sizes are approximate and can be adjusted based on individual needs.",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "65",
-        "goal": "lose 5kg in 1 month",
-        "restrictions": "vegetarian and gluten-free"
-      },
-      "solution_criteria": [
-        "Total daily calories are within the recommended range for an athlete of this height and weight.",
-        "The meal plan includes a balanced mix of protein, healthy fats, and complex carbohydrates.",
-        "All meals and snacks provided in the plan are vegetarian and gluten-free as per the athlete's restrictions."
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with athlete's personal food preferences and dislikes"
-    },
-    "score": 7,
-    "reasoning": "While the solution meets some of the mandatory criteria, it lacks specificity in its calculations and does not fully address the athlete's individual needs. However, it provides a clear and structured meal plan that meets their dietary restrictions."
-  },
-  {
-    "output": "Based on the athlete's dietary restrictions and goals, I've created a one-day vegan and gluten-free meal plan to help them achieve their weight loss goal.\n\n**Athlete Information:**\n- Height: 175 cm\n- Weight: 70 kg\n- Goal: lose 5kg in 7 days\n- Dietary restrictions: vegan and gluten-free\n\n**Calorie Intake:**\nTo support weight loss, the athlete's daily calorie intake will be adjusted to approximately 1500 calories.\n\n**Macronutrient Breakdown:**\n\n* Protein: 120g (20% of total calories)\n* Fat: 70g (40% of total calories)\n* Carbohydrates: 200g (40% of total calories)\n\n**Meal Plan:**\n\n**Breakfast (7:00 am - 8:30 am)**\n\n* Oatmeal with almond milk, banana, and walnuts\n\t+ 250g oats\n\t+ 150ml almond milk\n\t+ 100g banana\n\t+ 50g walnuts\n\t+ Total Calories: 450\n\t+ Protein: 10g\n\t+ Fat: 15g\n\t+ Carbohydrates: 60g\n\n**Snack (11:00 am - 12:30 pm)**\n\n* Apple slices with almond butter\n\t+ 100g apple slices\n\t+ 25g almond butter\n\t+ Total Calories: 190\n\t+ Protein: 4g\n\t+ Fat: 16g\n\t+ Carbohydrates: 15g\n\n**Lunch (1:00 pm - 2:30 pm)**\n\n* Quinoa salad with mixed vegetables, chickpeas, and lemon vinaigrette\n\t+ 150g quinoa\n\t+ 200g mixed vegetables (bell peppers, carrots, broccoli)\n\t+ 100g cooked chickpeas\n\t+ 20ml lemon juice\n\t+ Total Calories: 440\n\t+ Protein: 15g\n\t+ Fat: 10g\n\t+ Carbohydrates: 60g\n\n**Snack (4:00 pm - 5:30 pm)**\n\n* Smoothie bowl with banana, spinach, and chia seeds topped with sliced almonds\n\t+ 150g frozen banana\n\t+ 100g fresh spinach\n\t+ 10g chia seeds\n\t+ 25g sliced almonds\n\t+ Total Calories: 240\n\t+ Protein: 5g\n\t+ Fat: 12g\n\t+ Carbohydrates: 30g\n\n**Dinner (6:00 pm - 7:30 pm)**\n\n* Lentil soup with brown rice and steamed vegetables\n\t+ 200g cooked lentils\n\t+ 100g brown rice\n\t+ 150g steamed mixed vegetables (green beans, carrots)\n\t+ Total Calories: 420\n\t+ Protein: 18g\n\t+ Fat: 8g\n\t+ Carbohydrates: 60g\n\n**Before Bed Snack (9:00 pm - 10:30 pm)**\n\n* Dark chocolate square with non-dairy milk\n\t+ 20g dark chocolate (at least 70% cocoa)\n\t+ 100ml non-dairy milk (almond, soy, or coconut milk)\n\t+ Total Calories: 140\n\t+ Protein: 2g\n\t+ Fat: 8g\n\t+ Carbohydrates: 15g\n\n**Total Daily Intake:**\n\n* Calories: 1490\n* Protein: 118g\n* Fat: 75g\n* Carbohydrates: 235g",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "70",
-        "goal": "lose 5kg in 7 days",
-        "restrictions": "vegan and gluten-free"
-      },
-      "solution_criteria": [
-        "Total daily caloric intake is within 10% of the athlete's maintenance level.",
-        "The meal plan includes a balanced mix of protein, complex carbohydrates, and healthy fats.",
-        "At least 75% of the meal plan consists of plant-based foods.",
-        "All meals are gluten-free"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with a 7-day meal plan instead of 1 day"
-    },
-    "score": 8,
-    "reasoning": "The solution meets most of the mandatory requirements but has some minor issues. The lack of clear calculation and excessive portion sizes are notable weaknesses. Overall, it provides a well-structured meal plan with a good balance of macronutrients."
-  },
-  {
-    "output": "Based on the athlete's information, I've created a one-day meal plan that meets their dietary restrictions and supports their goal of losing 10 kg in 30 days.\n\n**Daily Calorie Intake:** 1700 calories\n\n**Macro Breakdown:**\n\n* Protein: 120g\n* Fat: 40g\n* Carbohydrates: 250g\n\n**Meal Plan:**\n\n**Breakfast (6:00 am)**\n\n* Oatmeal with almond milk, banana, and walnuts\n\t+ 1 cup cooked oatmeal (150g)\n\t+ 300ml almond milk\n\t+ 1 medium banana (100g)\n\t+ 20g chopped walnuts\n* Calories: 350\n* Protein: 10g\n* Fat: 12g\n* Carbohydrates: 60g\n\n**Mid-Morning Snack (10:00 am)**\n\n* Apple slices with peanut butter\n\t+ 1 medium apple (95g)\n\t+ 16g peanut butter\n* Calories: 150\n* Protein: 4g\n* Fat: 8g\n* Carbohydrates: 20g\n\n**Lunch (12:30 pm)**\n\n* Quinoa salad with roasted vegetables and avocado\n\t+ 100g cooked quinoa\n\t+ 1 cup mixed roasted vegetables (50g)\n\t+ 100g diced avocado\n\t+ 10g chopped fresh herbs (such as parsley or cilantro)\n* Calories: 400\n* Protein: 15g\n* Fat: 20g\n* Carbohydrates: 60g\n\n**Mid-Afternoon Snack (3:30 pm)**\n\n* Greek yogurt with berries and honey\n\t+ 150g Greek yogurt\n\t+ 100g mixed berries\n\t+ 5g honey\n* Calories: 200\n* Protein: 10g\n* Fat: 0g\n* Carbohydrates: 40g\n\n**Dinner (6:30 pm)**\n\n* Lentil soup with whole wheat bread and olive oil\n\t+ 250g cooked lentils\n\t+ 2 slices whole wheat bread (100g)\n\t+ 10g olive oil\n\t+ Salt and pepper to taste\n* Calories: 500\n* Protein: 20g\n* Fat: 10g\n* Carbohydrates: 80g\n\n**Total Daily Intake**\n\n* Calories: 1700\n* Protein: 120g\n* Fat: 40g\n* Carbohydrates: 250g\n\nThis meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates to support the athlete's weight loss goal while adhering to their vegetarian dietary restrictions. The portion sizes are designed to be budget-friendly and easy to prepare.\n\n**Tips:**\n\n* Stay hydrated by drinking at least 8-10 glasses of water throughout the day.\n* Incorporate physical activity, such as cardio and strength training exercises, into your daily routine.\n* Adjust the portion sizes based on individual calorie needs and activity levels.\n* Consult with a registered dietitian or healthcare professional for personalized nutrition advice.",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "70",
-        "goal": "lose 10 kg in 30 days",
-        "restrictions": "vegetarian"
-      },
-      "solution_criteria": [
-        "Total daily calories: 2500 (with a balance of protein, carbohydrates, and fat)",
-        "Macronutrient balance: 1.6g protein/kg body weight, 2.2g carbohydrates/kg body weight, 0.5g fat/kg body weight",
-        "Hydration: at least 3 liters of water per day",
-        "Meal frequency: 4 main meals and 2 snacks"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with a specific caloric intake requirement"
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 1,
+        "description": "Testing with technical computer science terminology"
+      }
     },
     "score": 6,
-    "reasoning": "While the solution meets most of the mandatory requirements, it lacks a balanced macronutrient ratio and has a lower-than-ideal daily caloric intake for weight loss. However, it provides a clear and structured meal plan with exact food, portions, and timing."
+    "reasoning": "The solution partially meets the mandatory requirements but fails to meet some key criteria. It contains the exact topics mentioned in the article, but it does not adhere to the required format and includes extraneous text."
   },
   {
-    "output": "Based on the athlete's information, I've created a one-day meal plan that meets their dietary restrictions and supports weight loss.\n\n**Daily Calorie Intake:**\nTo support weight loss, the daily calorie intake is set at 1500 calories, which is below the recommended maintenance level for athletes. This will result in a caloric deficit of 500 calories, promoting weight loss while still providing enough energy for optimal performance.\n\n**Macronutrient Breakdown:**\n\n* Protein: 120g\n* Fat: 40g\n* Carbohydrates: 150g\n\n**Meal Plan:**\n\n**Breakfast (6:00 AM)**\n\n* Oatmeal with Banana and Almond Butter\n\t+ 250g oatmeal (400 calories, 10g protein, 20g fat, 60g carbs)\n\t+ 1 medium banana (100 calories, 2g protein, 0g fat, 25g carbs)\n\t+ 20g almond butter (190 calories, 4g protein, 16g fat, 8g carbs)\n\n**Total Breakfast Calories: 580**\nTotal Nutrition:\n* Protein: 16g\n* Fat: 36g\n* Carbohydrates: 93g\n\n**Mid-Morning Snack (10:00 AM)**\n\n* Apple Slices with Peanut Butter\n\t+ 150g apple slices (95 calories, 0.3g protein, 0g fat, 25g carbs)\n\t+ 20g peanut butter (190 calories, 4g protein, 16g fat, 8g carbs)\n\n**Total Mid-Morning Snack Calories: 285**\nTotal Nutrition:\n* Protein: 4.3g\n* Fat: 16g\n* Carbohydrates: 33g\n\n**Lunch (12:00 PM)**\n\n* Quinoa and Black Bean Salad with Avocado Dressing\n\t+ 200g cooked quinoa (400 calories, 8g protein, 10g fat, 30g carbs)\n\t+ 150g cooked black beans (225 calories, 15g protein, 1g fat, 40g carbs)\n\t+ 100g avocado (140 calories, 3g protein, 12g fat, 6g carbs)\n\n**Total Lunch Calories: 765**\nTotal Nutrition:\n* Protein: 26g\n* Fat: 23g\n* Carbohydrates: 76g\n\n**Mid-Afternoon Snack (3:00 PM)**\n\n* Carrot Sticks with Hummus\n\t+ 100g carrot sticks (45 calories, 1g protein, 0g fat, 11g carbs)\n\t+ 20g hummus (150 calories, 2g protein, 10g fat, 6g carbs)\n\n**Total Mid-Afternoon Snack Calories: 195**\nTotal Nutrition:\n* Protein: 3g\n* Fat: 10g\n* Carbohydrates: 17g\n\n**Dinner (6:00 PM)**\n\n* Lentil and Vegetable Stir-Fry with Brown Rice\n\t+ 200g cooked lentils (230 calories, 18g protein, 0.5g fat, 40g carbs)\n\t+ 150g mixed vegetables (50 calories, 2g protein, 0g fat, 10g carbs)\n\t+ 100g brown rice (110 calories, 2g protein, 1g fat, 25g carbs)\n\n**Total Dinner Calories: 390**\nTotal Nutrition:\n* Protein: 22g\n* Fat: 1.5g\n* Carbohydrates: 75g\n\n**Before Bed Snack (9:00 PM)**\n\n* Greek Yogurt with Berries and Honey\n\t+ 150g Greek yogurt (100 calories, 10g protein, 0g fat, 7g carbs)\n\t+ 100g mixed berries (60 calories, 1g protein, 0g fat, 15g carbs)\n\t+ 5g honey (40 calories, 0g protein, 0g fat, 10g carbs)\n\n**Total Before Bed Snack Calories: 200**\nTotal Nutrition:\n* Protein: 11g\n* Fat: 0g\n* Carbohydrates: 32g\n\nThis meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while staying within the athlete's daily calorie intake. The portion sizes are based on gram measurements to ensure accuracy.\n\n**Budget-Friendly Options:**\n\n* Oatmeal: $1.50 per serving\n* Bananas: $0.25 per serving\n* Almond butter: $2.50 per jar (can make multiple servings)\n* Peanut butter: $2.50 per jar (can make multiple servings)\n* Apples: $0.50 per serving\n* Carrots: $0.25 per serving\n* Hummus: $1.",
+    "output": "[\n  \"increasing demand for renewable energy sources\", \n  \"technology and policy implementation\", \n  \"solar power\", \n  \"global energy mix\", \n  \"declining costs\", \n  \"growing efficiency\", \n  \"wind energy\", \n  \"policy implementation\", \n  \"incentives to promote their use\"\n]",
     "test_case": {
       "prompt_inputs": {
-        "height": "175cm",
-        "weight": "65kg",
-        "goal": "Weight loss",
-        "restrictions": "Vegetarian"
+        "content": "The increasing demand for renewable energy sources has led to significant advancements in technology and policy implementation. Solar power, for instance, has become a crucial component of the global energy mix due to its declining costs and growing efficiency. The growth of solar power is accompanied by the development of wind energy, which has also seen substantial improvements in recent years. Wind turbines have evolved through innovative designs, including carbon-fiber composite blades that increase energy capture by 35% in low-wind conditions. Furthermore, advancements in policy implementation have facilitated the adoption of renewable energy sources, with governments implementing various incentives to promote their use."
       },
       "solution_criteria": [
-        "Meal plan includes a balance of protein, carbohydrates, and healthy fats",
-        "Total daily calories do not exceed 2500",
-        "At least three servings of fruits and vegetables are included in the meal plan",
-        "Post-workout snack consists of a mix of carbohydrates and protein within an hour after exercise"
+        "Includes at least two distinct topics: solar power and wind energy",
+        "Mentions specific metrics or improvements (e.g., 24% increase in panel efficiency, 35% improvement in low-wind conditions)",
+        "Contains a clear mention of policy implications"
       ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with the inclusion of a post-workout snack"
-    },
-    "score": 6,
-    "reasoning": "The solution meets most of the mandatory requirements, but fails to meet two critical ones. The total daily calorie intake exceeds the recommended level, which may hinder weight loss goals. Additionally, a post-workout snack is crucial for replenishing energy stores and promoting recovery."
-  },
-  {
-    "output": "Based on the athlete's dietary restrictions and goals, I've created a one-day meal plan that meets their needs.\n\n**Athlete Information:**\n\n* Height: 180 cm\n* Weight: 70 kg\n* Goal: lose 5 kg in a week (calorie deficit of 2500 calories)\n* Dietary restrictions: vegetarian, gluten-free\n\n**Daily Calorie Intake:** 1500 calories\n\n**Macronutrient Breakdown:**\n\n* Protein: 120g\n* Fat: 40g\n* Carbohydrates: 220g\n\n**Meal Plan:**\n\n**Breakfast (7:00 am)**\n\n* Oatmeal with almond milk, banana, and walnuts\n\t+ 250g cooked oatmeal\n\t+ 1 cup almond milk (120ml)\n\t+ 1 medium banana (100g)\n\t+ 1 oz walnuts (28g)\n\tTotal Calories: 350, Protein: 10g, Fat: 16g, Carbohydrates: 40g\n\n**Mid-Morning Snack (10:00 am)**\n\n* Apple slices with peanut butter\n\t+ 1 medium apple (150g), sliced\n\t+ 2 tbsp peanut butter (32g)\n\tTotal Calories: 160, Protein: 8g, Fat: 16g, Carbohydrates: 20g\n\n**Lunch (12:30 pm)**\n\n* Quinoa and black bean salad with avocado\n\t+ 100g cooked quinoa\n\t+ 150g cooked black beans\n\t+ 1 medium avocado (140g), diced\n\t+ 1 cup mixed greens (20g)\n\tTotal Calories: 420, Protein: 22g, Fat: 20g, Carbohydrates: 40g\n\n**Mid-Afternoon Snack (3:30 pm)**\n\n* Greek yogurt with berries and honey\n\t+ 200g Greek yogurt\n\t+ 1/2 cup mixed berries (60g)\n\t+ 1 tsp honey (6g)\n\tTotal Calories: 220, Protein: 20g, Fat: 10g, Carbohydrates: 30g\n\n**Dinner (6:00 pm)**\n\n* Lentil soup with brown rice and steamed vegetables\n\t+ 250g cooked lentils\n\t+ 100g cooked brown rice\n\t+ 150g steamed mixed vegetables (broccoli, carrots, bell peppers)\n\tTotal Calories: 500, Protein: 20g, Fat: 10g, Carbohydrates: 60g\n\n**Evening Snack (8:30 pm)**\n\n* Herbal tea and dark chocolate square\n\t+ 1 cup herbal tea (240ml)\n\t+ 1 oz dark chocolate (28g)\n\tTotal Calories: 170, Protein: 2g, Fat: 12g, Carbohydrates: 20g\n\n**Budget-Friendly Tips:**\n\n* Oatmeal and brown rice are affordable and nutritious options.\n* Canned black beans and lentils can be purchased in bulk to save money.\n* Mixed vegetables can be purchased in frozen or fresh form at a lower cost.\n\nThis meal plan provides approximately 1500 calories, with balanced macronutrient distribution to support the athlete's weight loss goals. It excludes gluten-containing grains and emphasizes whole, plant-based foods that meet dietary restrictions.",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "180",
-        "weight": "70",
-        "goal": "lose 5 kg in a week",
-        "restrictions": "vegetarian, gluten-free"
-      },
-      "solution_criteria": [
-        "Includes all required macronutrients (carbohydrates, proteins, and fats) for the athlete's daily needs",
-        "Provides a balanced meal plan with at least 3 main meals and 2 snacks per day",
-        "Does not exceed 2000 calories per day",
-        "Suggests at least one source of protein, complex carbohydrate, and healthy fat at each meal"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with the exclusion of certain food groups (e.g. dairy, processed)"
-    },
-    "score": 6,
-    "reasoning": "While the solution meets some mandatory requirements, it fails to meet others. The excessive calorie intake and lack of detailed explanation are notable weaknesses. Overall, the solution is well-structured but requires improvement in meeting all mandatory criteria."
-  },
-  {
-    "output": "Based on the athlete's information, I've created a one-day meal plan that meets their dietary restrictions and supports their weight loss goal.\n\n**Daily Calorie Intake:**\nTo lose 5 kg in a week, the athlete needs to create a calorie deficit of approximately 750 calories per day. Based on their height, weight, and activity level, the daily calorie intake for this meal plan is:\n\n* Calories: 1700\n* Macronutrient Breakdown:\n\t+ Protein: 120g\n\t+ Fat: 60g\n\t+ Carbohydrates: 150g\n\n**Meal Plan:**\n\n**Breakfast (7:00 am)**\n\n* Oatmeal with Banana and Almond Milk\n\t+ 1 cup cooked oatmeal (100g) - 150 calories, 4g protein, 2.5g fat, 30g carbs\n\t+ 1 medium banana (100g) - 105 calories, 1g protein, 0g fat, 25g carbs\n\t+ 250ml almond milk (120ml) - 30 calories, 1g protein",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "65",
-        "goal": "lose 5 kg in a week",
-        "restrictions": "vegetarian and gluten-free"
-      },
-      "solution_criteria": [
-        "Meal plan includes at least 3 protein sources per day",
-        "Total daily calories are between 1500-2000",
-        "At least 2 meals per day include complex carbohydrates",
-        "Plan does not exceed the recommended daily intake of fiber (25g)"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with a cultural or regional cuisine restriction (e.g. Indian, Mexican)"
-    },
-    "score": 6,
-    "reasoning": "While the solution meets some mandatory requirements, it falls short in others. The daily calorie intake is below the recommended range, and only one meal per day includes complex carbohydrates. Additionally, there is no clear plan for achieving the desired weight loss through diet alone."
-  },
-  {
-    "output": "Based on the athlete's dietary restrictions and goals, I've created a one-day meal plan that meets their needs.\n\n**Daily Calorie Intake:** 1800 calories (to support weight loss)\n\n**Macro Breakdown:**\n\n* Protein: 120g (to maintain muscle mass and support recovery)\n* Fat: 40g (from plant-based sources to support energy and hydration)\n* Carbohydrates: 200g (to provide energy for workouts and daily activities)\n\n**Meal Plan:**\n\n**Breakfast**\n\n* Oatmeal with Banana, Almond Butter, and Spinach (300 calories, 25g protein, 15g fat, 40g carbs)\n\t+ 250g cooked oatmeal\n\t+ 100g sliced banana\n\t+ 20g almond butter\n\t+ 10g fresh spinach\n\n**Snack**\n\n* Apple Slices with Almond Butter (150 calories, 4g protein, 8g fat, 15g carbs)\n\t+ 120g apple slices\n\t+ 20g almond butter\n\n**Lunch**\n\n* Quinoa Salad with Roasted Vegetables and Avocado (450 calories, 20g protein, 15g fat, 50g carbs)\n\t+ 150g cooked quinoa\n\t+ 100g roasted bell peppers\n\t+ 80g roasted zucchini\n\t+ 30g chopped fresh parsley\n\t+ 10g sliced avocado\n\n**Snack**\n\n* Greek Yogurt with Berries and Granola (200 calories, 15g protein, 0g fat, 30g carbs)\n\t+ 150g Greek yogurt\n\t+ 50g mixed berries\n\t+ 20g granola\n\n**Dinner**\n\n* Lentil Soup with Whole Grain Bread (400 calories, 25g protein, 10g fat, 60g carbs)\n\t+ 200g cooked lentils\n\t+ 100g diced tomatoes\n\t+ 20g spinach\n\t+ 2 slices whole grain bread (30g)\n\n**Before Bedtime Snack**\n\n* Cottage Cheese with Cucumber Slices (150 calories, 15g protein, 0g fat, 5g carbs)\n\t+ 150g cottage cheese\n\t+ 50g sliced cucumber\n\n**Total Macro Breakdown:**\n\n* Calories: 1800\n* Protein: 120g\n* Fat: 40g\n* Carbohydrates: 200g",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "175",
-        "weight": "70",
-        "goal": "weight loss",
-        "restrictions": "vegetarian"
-      },
-      "solution_criteria": [
-        "Caloric intake is balanced and meets daily caloric needs",
-        "Macronutrient ratios are within a healthy range (40% carbohydrates, 30% protein, 30% fat)",
-        "The meal plan includes a variety of nutrient-dense foods from all food groups"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-      "scenario": "Testing with a time-sensitive constraint (e.g. athlete has to eat within an hour after training)"
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 4,
+        "description": "Testing with complex mathematical concepts, such as tensor analysis or differential equations"
+      }
     },
     "score": 7,
-    "reasoning": "The solution meets most mandatory requirements, but the daily caloric intake is slightly above the recommended amount for weight loss. Additionally, there is no explicit mention of portion sizes or timing for each meal."
+    "reasoning": "The solution meets most of the criteria, but lacks a clear mention of policy implications. It also does not meet the mandatory requirement of being a JSON array of strings containing only topics without extra commentary."
+  },
+  {
+    "output": "\"artificial intelligence\", \"machine learning\", \"natural language processing\", \"human-computer interaction\", \"computer vision\", \"image recognition\", \"object detection\", \"autonomous vehicles\", \"chatbots\", \"virtual assistants\", \"customer service\", \"data bias\", \"algorithmic transparency\", \"accountability in decision-making processes\"",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The intersection of artificial intelligence, machine learning, and natural language processing enables significant advancements in human-computer interaction. Computer vision, a key area of research, has made substantial progress in recent years with applications in image recognition, object detection, and autonomous vehicles. Furthermore, the integration of AI and ML in chatbots and virtual assistants is transforming customer service and experience. However, challenges persist, including data bias, algorithmic transparency, and ensuring accountability in decision-making processes."
+      },
+      "solution_criteria": [
+        "Includes all topics mentioned (AI/ML/NLP, Computer Vision, Image Recognition, Object Detection, Autonomous Vehicles, Chatbots, Virtual Assistants)"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 2,
+        "description": "Extracting topic categories from a passage of text about quantum computing"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution partially meets the mandatory requirements, but fails to meet the requirement of being a JSON array of strings. Additionally, it includes extra commentary that should be removed."
+  },
+  {
+    "output": "[\"renewable energy technologies\", \"solar photovoltaic (PV) systems\", \"cost reductions\", \"panel efficiency\", \"manufacturing and technology\", \"novel materials for wind turbine blades\", \"energy storage\", \"grid management\", \"decentralized renewable energy sources\", \"policy implications\", \"stakeholder engagement\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "A comprehensive review of recent advancements in renewable energy technologies reveals a multifaceted landscape. Central to this discussion are solar photovoltaic (PV) systems, which have experienced significant cost reductions and improvements in panel efficiency over the past decade. This progress is largely attributed to breakthroughs in manufacturing and technology, including the development of novel materials for wind turbine blades. Furthermore, emerging trends in energy storage and grid management are essential for a seamless integration of decentralized renewable energy sources. In this context, policy implications and stakeholder engagement play a pivotal role in shaping the future of sustainable energy systems."
+      },
+      "solution_criteria": [
+        "Includes 'solar power', 'wind turbine technology', or both"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 3,
+        "description": "Testing with medical research findings, using specific disease names and acronyms (e.g., CDC, WHO)"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution partially meets the mandatory requirements but has significant deficiencies due to missing required topics and extra commentary. It is essential for the solution to include all required topics without any additional commentary."
+  },
+  {
+    "output": "\"role of water\", \"ancient civilizations\", \"Indus Valley Civilization\", \"irrigation systems\", \"modern physics\", \"thermodynamics and fluid dynamics\", \"evaporation\", \"condensation\", \"precipitation\", \"renewable energy\", \"eco-friendly practices\", \"mitigate climate change\", \"solar-powered desalination plants\", \"clean drinking water\", \"wind turbines\", \"greenhouse gases\"",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The role of water in ancient civilizations, such as the Indus Valley Civilization's sophisticated irrigation systems, highlights the importance of understanding historical contexts. In contrast, modern physics describes the water cycle through the lens of thermodynamics and fluid dynamics, revealing intricate relationships between evaporation, condensation, and precipitation. However, recent advances in renewable energy have sparked interest in applying eco-friendly practices to mitigate climate change. For instance, solar-powered desalination plants can provide clean drinking water for communities worldwide, while wind turbines generate electricity without emitting greenhouse gases."
+      },
+      "solution_criteria": [
+        "Includes at least 2 distinct topics from different domains (history and physics)",
+        "Extracts only relevant information without unnecessary context or tangents",
+        "Produces a JSON array of strings with no empty or duplicate values",
+        "Does not exceed 4 unique topics"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 5,
+        "description": "Testing with diverse domains: combining topics from medicine, physics, and history (e.g., the water cycle in ancient civilizations)"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution meets most mandatory requirements but has significant deficiencies in terms of topic extraction and formatting. It is essential to improve the accuracy and brevity of the extracted topics."
+  },
+  {
+    "output": "[\"renewable energy\", \"innovation\", \"economic growth\", \"solar power\", \"wind energy\", \"fossil fuels\", \"energy security\", \"economic development\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The current shift towards renewable energy sources is not only beneficial for the environment but also presents opportunities for innovation and economic growth. Solar power, in particular, has seen significant advancements in recent years, with technological improvements leading to increased efficiency and reduced costs. This, in turn, has made solar energy a more competitive option for businesses and households looking to reduce their reliance on fossil fuels. Meanwhile, wind energy continues to play a crucial role in the transition to a low-carbon economy, with advancements in turbine design and technology allowing it to capture more energy from the wind. As governments implement policies aimed at promoting renewable energy, it is essential to consider the policy implications of these technologies, including their impact on energy security, economic development, and environmental sustainability."
+      },
+      "solution_criteria": [
+        "Includes all topics mentioned (renewable energy, solar power, wind energy, energy security, economic development, environmental sustainability)"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 6,
+        "description": "Testing with nuanced topic relationships: identifying synonyms or related terms within a passage"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution partially meets the mandatory requirements but has significant deficiencies in format and completeness. It includes all the topics mentioned in the article but fails to meet the required format."
+  },
+  {
+    "output": "\"circular economy\", \"environmental sustainability\", \"resource depletion\", \"reuse\", \"recycling\", \"waste reduction\", \"resource efficiency\", \"supply chain resilience\", \"competitiveness\", \"biodegradable materials\", \"advanced recycling technologies\", \"sustainable product design\", \"manufacturing\", \"standardized measurement and certification schemes\", \"effective policies and regulations\",\n\"renewable energy sources\", \"solar power\", \"fossil fuels\", \"technological advancements\", \"declining costs\", \"energy storage\", \"grid resilience\"",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The shift towards renewable energy sources is gaining momentum worldwide. Solar power has emerged as a viable alternative to fossil fuels, driven by technological advancements and declining costs. Wind turbines have also seen significant improvements in efficiency, with advances in materials science and control systems enabling them to capture more energy from the wind. Moreover, policy makers are beginning to recognize the importance of addressing energy storage and grid resilience when transitioning to renewable energy sources."
+      },
+      "solution_criteria": [
+        "Includes all topics mentioned: solar power economics, wind turbine technology"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 7,
+        "description": "Testing with specialized academic vocabulary, such as law or economics terminology"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution partially meets the mandatory requirements, but fails to meet the primary requirement of containing a JSON array of strings. It also includes extraneous topics with commentary."
+  },
+  {
+    "output": "[\"circular economy\", \"environmental sustainability\", \"resource depletion\", \"reuse\", \"recycling\", \"waste reduction\", \"resource efficiency\", \"supply chain resilience\", \"competitiveness\", \"biodegradable materials\", \"advanced recycling technologies\", \"sustainable product design\", \"manufacturing\", \"standardized measurement and certification schemes\", \"effective policies and regulations\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The concept of circular economy has been gaining traction in recent years, driven by growing concerns about environmental sustainability and resource depletion. A circular economy is based on the principles of reuse, recycling, and waste reduction, aiming to minimize waste and maximize resource efficiency. By adopting a circular economy approach, industries can reduce their environmental footprint, improve supply chain resilience, and enhance competitiveness. For instance, companies like Patagonia and H&M have implemented garment collecting initiatives, encouraging customers to return used clothing in exchange for discounts on new purchases. Additionally, the development of biodegradable materials and advanced recycling technologies has created new opportunities for sustainable product design and manufacturing. However, despite these progress, challenges persist, including the need for standardized measurement and certification schemes, as well as effective policies and regulations to support circular economy practices."
+      },
+      "solution_criteria": [
+        "Includes all topics mentioned",
+        "Solution accurately extracts at least 3 distinct topics from the passage"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 8,
+        "description": "Testing with large text passage (e.g., 500-1000 words) to ensure scalability and robustness"
+      }
+    },
+    "score": 7,
+    "reasoning": "The solution meets most of the mandatory requirements, but has some minor issues with accuracy and formatting. It accurately extracts distinct topics from the passage, but does not include all relevant topics and includes some extra commentary."
+  },
+  {
+    "output": "[\n  \"climate change\", \n  \"economic development\", \n  \"technological innovation\", \n  \"renewable energy\", \n  \"solar power\", \n  \"wind energy\", \n  \"research and development\", \n  \"low-carbon energy sources\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The study explores the intersection of climate change, economic development, and technological innovation in the context of renewable energy. By analyzing historical data on energy production and consumption patterns, researchers identify key factors that contribute to the scalability of solar power and wind energy. The analysis reveals a significant correlation between investment in research and development and the adoption of new technologies, suggesting that targeted initiatives can accelerate the transition to low-carbon energy sources."
+      },
+      "solution_criteria": [
+        "Includes all topics mentioned: climate change, economic development, technological innovation, renewable energy, solar power, wind energy"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 9,
+        "description": "Testing with ambiguous topic keywords, requiring the model to accurately disambiguate related concepts"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution partially meets the mandatory requirements, but has some issues with formatting and quoting."
+  },
+  {
+    "output": "[\"renewable energy sources\", \"climate change\", \"environmental degradation\", \"solar photovoltaic (PV) technology\", \"wind energy\", \"energy security\", \"economic development\", \"advanced materials\", \"sophisticated control systems\"]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The shift towards renewable energy sources has garnered significant attention in recent years, driven by concerns over climate change and environmental degradation. At the forefront of this transition are solar photovoltaic (PV) technology and wind energy, each with its unique set of benefits and challenges. Solar PV has witnessed remarkable advancements, including increased panel efficiency and reduced manufacturing costs, rendering it economically viable compared to fossil fuels in many markets. Conversely, wind energy has undergone substantial improvements through innovative turbine designs featuring advanced materials like carbon-fiber composite blades and sophisticated control systems. These technological innovations have enabled wind turbines to capture more energy in low-wind conditions, thereby increasing overall efficiency. Moreover, the policy implications of renewable energy are multifaceted, encompassing issues such as energy security, economic development, and environmental sustainability."
+      },
+      "solution_criteria": [
+        "Extracts topic 'Solar Photovoltaic (PV) Technology' from the passage",
+        "Extracts topic 'Wind Energy' from the passage",
+        "Extracts topic 'Renewable Energy Transition' as a overarching theme from the passage"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+      "scenario": {
+        "id": 10,
+        "description": "Testing with cultural or regional-specific terminology, such as idioms or colloquialisms"
+      }
+    },
+    "score": 6,
+    "reasoning": "The solution partially meets the requirements by extracting some key topics, but fails to meet all mandatory requirements. It also includes extraneous information that is not part of the original topic."
   }
 ]

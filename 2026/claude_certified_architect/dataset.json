@@ -1,157 +1,140 @@
 [
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "65",
-      "goal": "lose 5kg in 1 month",
-      "restrictions": "vegetarian and gluten-free"
+      "content": "The role of water in ancient civilizations, such as the Indus Valley Civilization's sophisticated irrigation systems, highlights the importance of understanding historical contexts. In contrast, modern physics describes the water cycle through the lens of thermodynamics and fluid dynamics, revealing intricate relationships between evaporation, condensation, and precipitation. However, recent advances in renewable energy have sparked interest in applying eco-friendly practices to mitigate climate change. For instance, solar-powered desalination plants can provide clean drinking water for communities worldwide, while wind turbines generate electricity without emitting greenhouse gases."
     },
     "solution_criteria": [
-      "Total daily calories are within the recommended range for an athlete of this height and weight.",
-      "The meal plan includes a balanced mix of protein, healthy fats, and complex carbohydrates.",
-      "All meals and snacks provided in the plan are vegetarian and gluten-free as per the athlete's restrictions."
+      "Includes at least 2 distinct topics from different domains (history and physics)",
+      "Extracts only relevant information without unnecessary context or tangents",
+      "Produces a JSON array of strings with no empty or duplicate values",
+      "Does not exceed 4 unique topics"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with athlete's personal food preferences and dislikes"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 5,
+      "description": "Testing with diverse domains: combining topics from medicine, physics, and history (e.g., the water cycle in ancient civilizations)"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "65",
-      "goal": "lose weight",
-      "restrictions": "vegetarian"
+      "content": "The increasing demand for renewable energy sources has led to significant advancements in technology and policy implementation. Solar power, for instance, has become a crucial component of the global energy mix due to its declining costs and growing efficiency. The growth of solar power is accompanied by the development of wind energy, which has also seen substantial improvements in recent years. Wind turbines have evolved through innovative designs, including carbon-fiber composite blades that increase energy capture by 35% in low-wind conditions. Furthermore, advancements in policy implementation have facilitated the adoption of renewable energy sources, with governments implementing various incentives to promote their use."
     },
     "solution_criteria": [
-      "Total daily caloric intake is within 10% of the athlete's maintenance level",
-      "The meal plan includes a balanced mix of protein, healthy fats, and complex carbohydrates",
-      "At least three servings of fruits or vegetables are included in each day's meals"
+      "Includes at least two distinct topics: solar power and wind energy",
+      "Mentions specific metrics or improvements (e.g., 24% increase in panel efficiency, 35% improvement in low-wind conditions)",
+      "Contains a clear mention of policy implications"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with meal planning for specific dietary needs (e.g. vegan, gluten-free)"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 4,
+      "description": "Testing with complex mathematical concepts, such as tensor analysis or differential equations"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "70",
-      "goal": "lose 5 kg in 3 months",
-      "restrictions": "vegetarian and gluten-free"
+      "content": "The intersection of artificial intelligence, machine learning, and natural language processing enables significant advancements in human-computer interaction. Computer vision, a key area of research, has made substantial progress in recent years with applications in image recognition, object detection, and autonomous vehicles. Furthermore, the integration of AI and ML in chatbots and virtual assistants is transforming customer service and experience. However, challenges persist, including data bias, algorithmic transparency, and ensuring accountability in decision-making processes."
     },
     "solution_criteria": [
-      "Contains a balanced macronutrient distribution (20-30% protein, 40-50% carbohydrates, 25-35% fat)",
-      "Includes at least 2 servings of fruits and vegetables per day",
-      "Has a daily calorie intake between 1500-2000 calories"
+      "Includes all topics mentioned (AI/ML/NLP, Computer Vision, Image Recognition, Object Detection, Autonomous Vehicles, Chatbots, Virtual Assistants)"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with a single-word ingredient"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 2,
+      "description": "Extracting topic categories from a passage of text about quantum computing"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "70",
-      "goal": "lose 5kg in 7 days",
-      "restrictions": "vegan and gluten-free"
+      "content": "A comprehensive review of recent advancements in renewable energy technologies reveals a multifaceted landscape. Central to this discussion are solar photovoltaic (PV) systems, which have experienced significant cost reductions and improvements in panel efficiency over the past decade. This progress is largely attributed to breakthroughs in manufacturing and technology, including the development of novel materials for wind turbine blades. Furthermore, emerging trends in energy storage and grid management are essential for a seamless integration of decentralized renewable energy sources. In this context, policy implications and stakeholder engagement play a pivotal role in shaping the future of sustainable energy systems."
     },
     "solution_criteria": [
-      "Total daily caloric intake is within 10% of the athlete's maintenance level.",
-      "The meal plan includes a balanced mix of protein, complex carbohydrates, and healthy fats.",
-      "At least 75% of the meal plan consists of plant-based foods.",
-      "All meals are gluten-free"
+      "Includes 'solar power', 'wind turbine technology', or both"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with a 7-day meal plan instead of 1 day"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 3,
+      "description": "Testing with medical research findings, using specific disease names and acronyms (e.g., CDC, WHO)"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "70",
-      "goal": "lose 5kg in 1 month",
-      "restrictions": "vegetarian"
+      "content": "The shift towards renewable energy sources has garnered significant attention in recent years, with proponents arguing that it is crucial for mitigating climate change. Solar power, in particular, has emerged as a promising alternative to fossil fuels. Despite the environmental benefits, solar panel manufacturing poses several technical challenges, including material sourcing and production costs. In contrast, wind energy has seen remarkable advancements in technology, with innovations like larger turbines and more efficient blades increasing its competitiveness. However, the intermittency of wind power remains a significant hurdle to widespread adoption. Moreover, policy frameworks play a critical role in shaping the trajectory of renewable energy development. Effective regulation can foster innovation and economies of scale, while inadequate policies may hinder progress. Ultimately, a comprehensive approach that addresses all these aspects is necessary for realizing the full potential of renewable energy."
     },
     "solution_criteria": [
-      "Total daily calories <= 1700",
-      "Daily protein intake >= 1.6g/kg body weight",
-      "Includes at least 3 servings of complex carbohydrates and 2 servings of healthy fats"
+      "Contains exactly 3 topics (solar power economics, wind turbine technology, policy implications)"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with a limited ingredient budget ($5/day)"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 1,
+      "description": "Testing with technical computer science terminology"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "70",
-      "goal": "lose 10 kg in 30 days",
-      "restrictions": "vegetarian"
+      "content": "The current shift towards renewable energy sources is not only beneficial for the environment but also presents opportunities for innovation and economic growth. Solar power, in particular, has seen significant advancements in recent years, with technological improvements leading to increased efficiency and reduced costs. This, in turn, has made solar energy a more competitive option for businesses and households looking to reduce their reliance on fossil fuels. Meanwhile, wind energy continues to play a crucial role in the transition to a low-carbon economy, with advancements in turbine design and technology allowing it to capture more energy from the wind. As governments implement policies aimed at promoting renewable energy, it is essential to consider the policy implications of these technologies, including their impact on energy security, economic development, and environmental sustainability."
     },
     "solution_criteria": [
-      "Total daily calories: 2500 (with a balance of protein, carbohydrates, and fat)",
-      "Macronutrient balance: 1.6g protein/kg body weight, 2.2g carbohydrates/kg body weight, 0.5g fat/kg body weight",
-      "Hydration: at least 3 liters of water per day",
-      "Meal frequency: 4 main meals and 2 snacks"
+      "Includes all topics mentioned (renewable energy, solar power, wind energy, energy security, economic development, environmental sustainability)"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with a specific caloric intake requirement"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 6,
+      "description": "Testing with nuanced topic relationships: identifying synonyms or related terms within a passage"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175cm",
-      "weight": "65kg",
-      "goal": "Weight loss",
-      "restrictions": "Vegetarian"
+      "content": "The shift towards renewable energy sources is gaining momentum worldwide. Solar power has emerged as a viable alternative to fossil fuels, driven by technological advancements and declining costs. Wind turbines have also seen significant improvements in efficiency, with advances in materials science and control systems enabling them to capture more energy from the wind. Moreover, policy makers are beginning to recognize the importance of addressing energy storage and grid resilience when transitioning to renewable energy sources."
     },
     "solution_criteria": [
-      "Meal plan includes a balance of protein, carbohydrates, and healthy fats",
-      "Total daily calories do not exceed 2500",
-      "At least three servings of fruits and vegetables are included in the meal plan",
-      "Post-workout snack consists of a mix of carbohydrates and protein within an hour after exercise"
+      "Includes all topics mentioned: solar power economics, wind turbine technology"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with the inclusion of a post-workout snack"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 7,
+      "description": "Testing with specialized academic vocabulary, such as law or economics terminology"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "180",
-      "weight": "70",
-      "goal": "lose 5 kg in a week",
-      "restrictions": "vegetarian, gluten-free"
+      "content": "The concept of circular economy has been gaining traction in recent years, driven by growing concerns about environmental sustainability and resource depletion. A circular economy is based on the principles of reuse, recycling, and waste reduction, aiming to minimize waste and maximize resource efficiency. By adopting a circular economy approach, industries can reduce their environmental footprint, improve supply chain resilience, and enhance competitiveness. For instance, companies like Patagonia and H&M have implemented garment collecting initiatives, encouraging customers to return used clothing in exchange for discounts on new purchases. Additionally, the development of biodegradable materials and advanced recycling technologies has created new opportunities for sustainable product design and manufacturing. However, despite these progress, challenges persist, including the need for standardized measurement and certification schemes, as well as effective policies and regulations to support circular economy practices."
     },
     "solution_criteria": [
-      "Includes all required macronutrients (carbohydrates, proteins, and fats) for the athlete's daily needs",
-      "Provides a balanced meal plan with at least 3 main meals and 2 snacks per day",
-      "Does not exceed 2000 calories per day",
-      "Suggests at least one source of protein, complex carbohydrate, and healthy fat at each meal"
+      "Includes all topics mentioned",
+      "Solution accurately extracts at least 3 distinct topics from the passage"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with the exclusion of certain food groups (e.g. dairy, processed)"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 8,
+      "description": "Testing with large text passage (e.g., 500-1000 words) to ensure scalability and robustness"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "65",
-      "goal": "lose 5 kg in a week",
-      "restrictions": "vegetarian and gluten-free"
+      "content": "The study explores the intersection of climate change, economic development, and technological innovation in the context of renewable energy. By analyzing historical data on energy production and consumption patterns, researchers identify key factors that contribute to the scalability of solar power and wind energy. The analysis reveals a significant correlation between investment in research and development and the adoption of new technologies, suggesting that targeted initiatives can accelerate the transition to low-carbon energy sources."
     },
     "solution_criteria": [
-      "Meal plan includes at least 3 protein sources per day",
-      "Total daily calories are between 1500-2000",
-      "At least 2 meals per day include complex carbohydrates",
-      "Plan does not exceed the recommended daily intake of fiber (25g)"
+      "Includes all topics mentioned: climate change, economic development, technological innovation, renewable energy, solar power, wind energy"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with a cultural or regional cuisine restriction (e.g. Indian, Mexican)"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 9,
+      "description": "Testing with ambiguous topic keywords, requiring the model to accurately disambiguate related concepts"
+    }
   },
   {
     "prompt_inputs": {
-      "height": "175",
-      "weight": "70",
-      "goal": "weight loss",
-      "restrictions": "vegetarian"
+      "content": "The shift towards renewable energy sources has garnered significant attention in recent years, driven by concerns over climate change and environmental degradation. At the forefront of this transition are solar photovoltaic (PV) technology and wind energy, each with its unique set of benefits and challenges. Solar PV has witnessed remarkable advancements, including increased panel efficiency and reduced manufacturing costs, rendering it economically viable compared to fossil fuels in many markets. Conversely, wind energy has undergone substantial improvements through innovative turbine designs featuring advanced materials like carbon-fiber composite blades and sophisticated control systems. These technological innovations have enabled wind turbines to capture more energy in low-wind conditions, thereby increasing overall efficiency. Moreover, the policy implications of renewable energy are multifaceted, encompassing issues such as energy security, economic development, and environmental sustainability."
     },
     "solution_criteria": [
-      "Caloric intake is balanced and meets daily caloric needs",
-      "Macronutrient ratios are within a healthy range (40% carbohydrates, 30% protein, 30% fat)",
-      "The meal plan includes a variety of nutrient-dense foods from all food groups"
+      "Extracts topic 'Solar Photovoltaic (PV) Technology' from the passage",
+      "Extracts topic 'Wind Energy' from the passage",
+      "Extracts topic 'Renewable Energy Transition' as a overarching theme from the passage"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete. Avoid using complicated and special characters to avoid json parsing errors",
-    "scenario": "Testing with a time-sensitive constraint (e.g. athlete has to eat within an hour after training)"
+    "task_description": "Extract topics out of a passage of text from a scholarly artticle into a JSON array of strings",
+    "scenario": {
+      "id": 10,
+      "description": "Testing with cultural or regional-specific terminology, such as idioms or colloquialisms"
+    }
   }
 ]

@@ -1,0 +1,476 @@
+<example>
+<input>
+height: 175
+weight: 70
+goal: lose 5 kg in 3 months
+restrictions: vegetarian and gluten-free
+</input>
+<output>
+Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose weight.
+
+**Athlete Information:**
+
+* Height: 175 cm (5'9")
+* Weight: 70 kg (154 lbs)
+* Goal: Lose 5 kg in 3 months
+* Dietary restrictions: Vegetarian and gluten-free
+
+**Daily Calorie Intake:**
+To support weight loss, the daily calorie intake for this athlete is approximately 1700-1800 calories, with a caloric deficit of 500-750 calories to achieve the goal of losing 5 kg in 3 months.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6 grams/kg body weight = 112g (approx. 20% of total calories)
+* Fat: 0.5g/kg body weight = 35g (approx. 15% of total calories)
+* Carbohydrates: 2-3 grams/kg body weight = 140g (approx. 60% of total calories)
+
+**Meal Plan:**
+
+**Breakfast (6:00 am)**
+
+* Gluten-free oatmeal with almond milk, banana, and walnuts
+	+ 200g gluten-free oatmeal cooked with 120ml water
+	+ 100g almond milk
+	+ 100g sliced banana
+	+ 25g chopped walnuts
+	+ 5g honey (optional)
+
+**Mid-Morning Snack (10:00 am)**
+
+* Carrot sticks with hummus (50g)
+	+ 80g carrot sticks
+	+ 30g hummus
+
+**Lunch (12:30 pm)**
+
+* Quinoa and vegetable salad with chickpeas and avocado
+	+ 120g cooked quinoa
+	+ 50g mixed vegetables (bell peppers, broccoli, carrots) cooked in 15g coconut oil
+	+ 80g cooked chickpeas
+	+ 20g sliced avocado
+	+ 5g low-fat yogurt
+
+**Mid-Afternoon Snack (3:30 pm)**
+
+* Apple slices with almond butter (40g)
+	+ 100g apple slices
+	+ 20g almond butter
+
+**Dinner (6:30 pm)**
+
+* Lentil and vegetable soup with gluten-free bread
+	+ 120g cooked lentils
+	+ 50g mixed vegetables (carrots, zucchini, bell peppers) cooked in 15g coconut oil
+	+ 5g low-sodium soy sauce (optional)
+	+ 30g gluten-free bread
+
+**Before Bed Snack (9:00 pm)**
+
+* Greek yogurt with berries and chia seeds (40g)
+	+ 80g Greek yogurt
+	+ 20g mixed berries
+	+ 10g chia seeds
+
+**Total Daily Intake:**
+
+* Calories: 1720
+* Protein: 112g
+* Fat: 35g
+* Carbohydrates: 140g
+
+This meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while meeting the athlete's dietary restrictions. The portion sizes are based on the athlete's individual needs, and the calorie intake is carefully calculated to support weight loss.
+</output>
+<score>
+8
+</score>
+<reasoning>
+The solution meets most of the mandatory requirements but has some minor issues. The meal plan is well-structured and provides a balanced mix of protein, healthy fats, and complex carbohydrates. However, the calorie intake is slightly below the recommended range, and the macronutrient breakdown could be more detailed.
+</reasoning>
+</example>
+
+<example>
+<input>
+height: 175
+weight: 65
+goal: lose 5kg in 1 month
+restrictions: vegetarian and gluten-free
+</input>
+<output>
+Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose weight.
+
+
+- Height: 175
+- Weight: 65
+- Goal: lose 5kg in 1 month
+- Dietary restrictions: vegetarian and gluten-free
+
+
+Guidelines:
+1. Include accurate daily calorie amount
+2. Show protein, fat and carb amounts
+3. Specify when to eat each meal
+4. Use only foods that fit restrictions
+5. List all portion sizes in grams
+6. Keep budget-friendly if mentioned
+
+Here is a sample output:
+
+Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose weight.
+
+**Athlete Information:**
+
+* Height: 175 cm (5'9")
+* Weight: 65 kg (143 lbs)
+* Goal: Lose weight
+* Dietary restrictions: Vegetarian and gluten-free
+
+**Daily Calorie Intake:**
+To support weight loss, the daily calorie intake for this athlete is approximately 1500 calories.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6 grams/kg body weight = 104g (approx. 20% of total calories)
+* Fat: 0.5g/kg body weight = 32g (approx. 15% of total calories)
+* Carbohydrates: 2-3 grams/kg body weight = 130g (approx. 60% of total calories)
+
+**Meal Plan:**
+
+**Breakfast (6:00 am)**
+
+* Gluten-free oatmeal with almond milk, banana, and walnuts
+	+ 200g gluten-free oatmeal cooked with 120ml water
+	+ 100g almond milk
+	+ 80g sliced banana
+	+ 15g chopped walnuts
+
+**Mid-Morning Snack (10:00 am)**
+
+* Carrot sticks with hummus (60g)
+	+ 90g carrot sticks
+	+ 30g hummus
+
+**Lunch (12:30 pm)**
+
+* Quinoa salad with roasted vegetables and avocado
+	+ 150g cooked quinoa
+	+ 50g mixed roasted vegetables (bell peppers, broccoli, carrots) cooked in 10g olive oil
+	+ 20g sliced avocado
+	+ 15g chopped fresh parsley
+
+**Mid-Afternoon Snack (3:30 pm)**
+
+* Apple slices with almond butter (80g)
+	+ 100g apple slices
+	+ 25g almond butter
+
+**Dinner (6:30 pm)**
+
+* Grilled tofu with brown rice and steamed vegetables
+	+ 50g cubed grilled tofu
+	+ 150g cooked brown rice
+	+ 20g mixed steamed vegetables (green beans, cauliflower)
+
+**Before Bed Snack (9:00 pm)**
+
+* Greek yogurt with berries and chia seeds (60g)
+	+ 80g Greek yogurt
+	+ 30g mixed berries
+	+ 10g chia seeds
+
+**Total Daily Intake:**
+
+* Calories: 1475
+* Protein: 104g
+* Fat: 32g
+* Carbohydrates: 130g
+
+This meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while meeting the athlete's dietary restrictions. The portion sizes are based on the athlete's individual needs, and the calorie intake is carefully calculated to support weight loss.
+</output>
+<score>
+8
+</score>
+<reasoning>
+While the solution meets most of the mandatory requirements, there are minor discrepancies in the daily caloric intake and some portion sizes. However, it still provides a well-structured meal plan that supports weight loss within the athlete's dietary restrictions.
+</reasoning>
+</example>
+
+<example>
+<input>
+height: 175
+weight: 70
+goal: lose 5kg in 7 days
+restrictions: vegan and gluten-free
+</input>
+<output>
+Based on the provided information, I've created a one-day meal plan for the vegan athlete looking to lose 5kg in 7 days.
+
+**Athlete Information:**
+
+* Height: 175 cm (5'9")
+* Weight: 70 kg (154 lbs)
+* Goal: Lose weight
+* Dietary restrictions: Vegan and gluten-free
+
+**Daily Calorie Intake:**
+To support weight loss, the daily calorie intake for this athlete is approximately 1500-1700 calories.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6 grams/kg body weight = 112g (approx. 20% of total calories)
+* Fat: 0.5g/kg body weight = 35g (approx. 15% of total calories)
+* Carbohydrates: 2-3 grams/kg body weight = 120g (approx. 60% of total calories)
+
+**Meal Plan:**
+
+**Breakfast (6:00 am)**
+
+* Smoothie bowl with banana, spinach, almond milk, and chia seeds
+	+ 200g frozen banana
+	+ 100g fresh spinach leaves
+	+ 150ml almond milk
+	+ 15g chia seeds
+	+ 10g hemp seeds
+
+**Mid-Morning Snack (10:00 am)**
+
+* Carrot sticks with guacamole (60g)
+	+ 100g carrot sticks
+	+ 30g mashed avocado
+	+ 5g lemon juice
+
+**Lunch (12:30 pm)**
+
+* Quinoa salad with roasted vegetables and tofu
+	+ 150g cooked quinoa
+	+ 100g mixed roasted vegetables (broccoli, bell peppers, carrots) tossed in 10g olive oil
+	+ 50g cubed firm tofu
+	+ 5g apple cider vinegar
+
+**Mid-Afternoon Snack (3:30 pm)**
+
+* Apple slices with almond butter (80g)
+	+ 150g apple slices
+	+ 30g almond butter
+
+**Dinner (6:30 pm)**
+
+* Lentil soup with brown rice and steamed broccoli
+	+ 200g cooked lentils
+	+ 100g cooked brown rice
+	+ 100g steamed broccoli florets
+
+**Before Bed Snack (9:00 pm)**
+
+* Greek yogurt alternative made from soy milk, mixed berries, and chia seeds (60g)
+	+ 150g soy milk
+	+ 30g mixed berries
+	+ 10g chia seeds
+
+**Total Daily Intake:**
+
+* Calories: 1525
+* Protein: 112g
+* Fat: 35g
+* Carbohydrates: 120g
+
+This meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while meeting the athlete's dietary restrictions. The portion sizes are based on the athlete's individual needs, and the calorie intake is carefully calculated to support weight loss.
+</output>
+<score>
+8
+</score>
+<reasoning>
+The solution demonstrates a good understanding of the athlete's dietary needs and restrictions. However, there is room for improvement in terms of calorie intake and portion sizes.
+</reasoning>
+</example>
+
+<example>
+<input>
+height: 175
+weight: 70
+goal: weight loss
+restrictions: vegetarian
+</input>
+<output>
+Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose weight.
+
+
+height: 175
+weight: 70
+goal: lose weight
+restrictions: vegetarian
+
+
+
+Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose weight.
+
+**Athlete Information:**
+
+* Height: 175 cm (5'9")
+* Weight: 70 kg (154 lbs)
+* Goal: Lose weight
+* Dietary restrictions: Vegetarian
+
+**Daily Calorie Intake:**
+To support weight loss, the daily calorie intake for this athlete is approximately 1600 calories.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6 grams/kg body weight = 112g (approx. 20% of total calories)
+* Fat: 0.5g/kg body weight = 35g (approx. 15% of total calories)
+* Carbohydrates: 2-3 grams/kg body weight = 120g (approx. 60% of total calories)
+
+**Meal Plan:**
+
+**Breakfast (6:00 am)**
+
+* Whole-grain toast with avocado and scrambled eggs
+	+ 120g whole-grain bread
+	+ 20g mashed avocado
+	+ 2 large eggs, scrambled
+	+ 10g cherry tomatoes, halved
+
+**Mid-Morning Snack (10:00 am)**
+
+* Rice cakes with almond butter and banana slices
+	+ 80g rice cakes
+	+ 20g almond butter
+	+ 100g sliced banana
+
+**Lunch (12:30 pm)**
+
+* Lentil soup with whole-grain crackers
+	+ 250g cooked lentils
+	+ 50g diced vegetables (carrots, celery)
+	+ 20g whole-grain crackers
+	+ 10g low-fat yogurt
+
+**Mid-Afternoon Snack (3:30 pm)**
+
+* Apple slices with peanut butter (80g)
+	+ 150g apple slices
+	+ 30g peanut butter
+
+**Dinner (6:30 pm)**
+
+* Grilled tofu with roasted vegetables and quinoa
+	+ 50g cubed firm tofu
+	+ 100g mixed vegetables (broccoli, bell peppers) roasted in 10g olive oil
+	+ 150g cooked quinoa
+	+ 10g soy sauce (optional)
+
+**Before Bed Snack (9:00 pm)**
+
+* Greek yogurt with honey and almonds (60g)
+	+ 80g Greek yogurt
+	+ 10g honey
+	+ 20g sliced almonds
+
+**Total Daily Intake:**
+
+* Calories: 1580
+* Protein: 112g
+* Fat: 35g
+* Carbohydrates: 120g
+
+This meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while meeting the athlete's dietary restrictions. The portion sizes are based on the athlete's individual needs, and the calorie intake is carefully calculated to support weight loss.
+
+Note: This meal plan has been adjusted to provide a lower calorie intake while maintaining a balanced macronutrient profile. However, please note that this may not be sufficient for everyone, especially those with higher energy expenditure levels.
+</output>
+<score>
+8
+</score>
+<reasoning>
+While the solution provides a well-structured meal plan, there are minor discrepancies with the daily caloric intake and lack of detailed calculations. Overall, it meets most mandatory requirements but has some room for improvement.
+</reasoning>
+</example>
+
+<example>
+<input>
+height: 180
+weight: 70
+goal: lose 5 kg in a week
+restrictions: vegetarian, gluten-free
+</input>
+<output>
+Based on the provided information, I've created a one-day meal plan for the vegetarian athlete looking to lose 5 kg in a week while following their dietary restrictions.
+
+
+- Height: 180 cm
+- Weight: 70 kg
+- Goal: Lose 5 kg in a week
+- Dietary restrictions: Vegetarian, gluten-free
+
+
+**Daily Calorie Intake:**
+To support weight loss, the daily calorie intake for this athlete is approximately 1500 calories.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6 grams/kg body weight = 112g (approx. 20% of total calories)
+* Fat: 0.5g/kg body weight = 35g (approx. 15% of total calories)
+* Carbohydrates: 2-3 grams/kg body weight = 110g (approx. 60% of total calories)
+
+**Meal Plan:**
+
+**Breakfast (6:00 am)**
+
+* Gluten-free oatmeal with almond milk, banana, and walnuts
+    + 200g gluten-free oatmeal cooked with 150ml water
+    + 120g almond milk
+    + 100g sliced banana
+    + 20g chopped walnuts
+    + 5g honey (optional)
+
+**Mid-Morning Snack (10:00 am)**
+
+* Carrot sticks with hummus (50g)
+    + 80g carrot sticks
+    + 30g hummus
+
+**Lunch (12:30 pm)**
+
+* Brown rice and lentil salad with mixed vegetables
+    + 150g cooked brown rice
+    + 100g cooked lentils
+    + 50g mixed vegetables (bell peppers, broccoli, carrots) cooked in 10g coconut oil
+    + 5g lemon juice (optional)
+
+**Mid-Afternoon Snack (3:30 pm)**
+
+* Apple slices with almond butter (40g)
+    + 120g apple slices
+    + 20g almond butter
+
+**Dinner (6:30 pm)**
+
+* Quinoa and vegetable stir-fry with tofu
+    + 150g cooked quinoa
+    + 100g mixed vegetables (bell peppers, broccoli, carrots) cooked in 15g coconut oil
+    + 50g cubed firm tofu
+    + 5g soy sauce (optional)
+
+**Before Bed Snack (9:00 pm)**
+
+* Greek yogurt with berries and chia seeds (60g)
+    + 100g Greek yogurt
+    + 30g mixed berries
+    + 10g chia seeds
+
+**Total Daily Intake:**
+
+* Calories: 1495
+* Protein: 112g
+* Fat: 35g
+* Carbohydrates: 110g
+
+This meal plan provides a balanced mix of protein, healthy fats, and complex carbohydrates while meeting the athlete's dietary restrictions. The portion sizes are based on the athlete's individual needs, and the calorie intake is carefully calculated to support weight loss.
+
+Please note that losing 5 kg in a week may not be sustainable or healthy for everyone. It's essential to consult with a registered dietitian or healthcare professional before making any significant changes to your diet.
+</output>
+<score>
+8
+</score>
+<reasoning>
+While the solution meets most mandatory requirements, it falls short in providing a calorie intake that supports weight loss and offering more varied protein sources. Additionally, the meal plan could benefit from a clearer connection to the athlete's individual needs.
+</reasoning>
+</example>

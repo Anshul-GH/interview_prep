@@ -1,0 +1,126 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "70",
+      "goal": "Weight loss to improve endurance during long-distance running",
+      "restrictions": "Vegetarian, gluten-free"
+    },
+    "solution_criteria": [
+      "Total daily calories do not exceed 2500",
+      "At least 1.6 grams of protein per kilogram of body weight from plant-based sources",
+      "Carbohydrate intake is balanced with complex carbohydrates and fiber-rich foods"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with incomplete information (e.g., ' athlete' without any specific sport or diet needs)"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "70",
+      "goal": "Weight loss of 5kg in 1 month",
+      "restrictions": "Vegetarian"
+    },
+    "solution_criteria": [
+      "Total daily calories: 1500-1800",
+      "Macro-nutrient balance (carbs: 55%, protein: 25%, fat: 20%)",
+      "At least 3 servings of fruits and vegetables per day",
+      "No added sugars or saturated fats"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with technical computer science terminology"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "70",
+      "goal": "Weight Loss",
+      "restrictions": "Vegetarian"
+    },
+    "solution_criteria": [
+      "Total daily calories: 2500",
+      "Macronutrient balance: 1.6g protein, 2g fat, 60g carbohydrates per day",
+      "Meal frequency: 5 meals, including 3 main meals and 2 snacks",
+      "Hydration: at least 8 cups of water per day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with contradictory requirements (e.g., 'healthy' and ' athlete')"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "65",
+      "goal": "muscle gain",
+      "restrictions": "vegetarian"
+    },
+    "solution_criteria": [
+      "Total daily calories exceed 2500",
+      "Macro-nutrient distribution meets muscle gain goals (1.6g protein, 2g carbs, 0.5g fat per kilogram of body weight)",
+      "All meals are planned within a 30-minute window after waking up"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with a very short time frame (e.g., '1 day' for an athlete with extreme dietary needs)"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "70",
+      "goal": "lose 5kg in 1 month",
+      "restrictions": "gluten-free, low-carb, vegan"
+    },
+    "solution_criteria": [
+      "Total daily caloric intake is below 1500 calories",
+      "Macro-nutrient balance (protein:35%, fat:20%, carbs:45%)",
+      "All meals are gluten-free and do not contain any animal products",
+      "The meal plan includes at least 5 servings of fruits and vegetables per day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with unreasonably complex dietary restrictions (e.g., gluten-free, vegan, keto)"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "65",
+      "goal": "Weight Loss",
+      "restrictions": "Vegan"
+    },
+    "solution_criteria": [
+      "Total daily calories: < 2500",
+      "Macronutrient distribution: Protein > 1.6g/kg body weight, Fat < 20% of total calories, Carbohydrates > 55% of total calories",
+      "All meal suggestions include a source of protein and healthy fats"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with an athlete of a specific age group or developmental stage (e.g., 'youth athlete')"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "70",
+      "goal": "Weight loss",
+      "restrictions": "Vegetarian"
+    },
+    "solution_criteria": [
+      "Prompts include a 1-day meal plan with approximately 1500 calories",
+      "Includes at least 2 protein sources (e.g. legumes, tofu)",
+      "Suggests healthy snack options (e.g. fruits, nuts)",
+      "Meets the athlete's dietary restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with a very short list of acceptable food items (e.g., only 3-5 options)"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "70",
+      "goal": "muscle gain",
+      "restrictions": "vegan"
+    },
+    "solution_criteria": [
+      "Total daily calories exceed 2500 with an emphasis on macronutrient balance (60% carbs, 25% protein, 15% fat)",
+      "Meal plan includes a balanced mix of protein sources from legumes, beans, and tofu, with an average of 120g of protein per day",
+      "At least 5 servings of fruits and vegetables are included in the meal plan"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete Do not use any special characters that can break the json structure of the generated output.",
+    "scenario": "Testing with a specific macronutrient ratio requirement (e.g., 40% carbs, 30% protein, 30% fat)"
+  }
+]

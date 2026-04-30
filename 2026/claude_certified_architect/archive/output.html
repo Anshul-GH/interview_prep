@@ -1,0 +1,737 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">8</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">6.9 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">75.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with incomplete information (e.g., ' athlete' without any specific sport or diet needs)</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 70<br><strong>goal:</strong> Weight loss to improve endurance during long-distance running<br><strong>restrictions:</strong> Vegetarian, gluten-free</td>
+                <td class="criteria">• Total daily calories do not exceed 2500<br>• At least 1.6 grams of protein per kilogram of body weight from plant-based sources<br>• Carbohydrate intake is balanced with complex carbohydrates and fiber-rich foods</td>
+                <td class="output"><pre>Based on the provided information, here are some dietary recommendations for the individual aiming to lose weight and improve endurance during long-distance running:
+
+**Caloric Intake:** To support weight loss while maintaining energy levels, the daily caloric intake should be around 1800-2000 calories. This is slightly below the maintenance level for a 175cm tall person with a 70kg body mass.
+
+**Macronutrient Breakdown:**
+
+*   Carbohydrates (55-60% of daily calories): Focus on complex carbohydrates such as whole grains, fruits, and vegetables to provide sustained energy.
+*   Protein (15-20% of daily calories): Include plant-based protein sources like legumes, beans, lentils, tofu, tempeh, and seitan to support muscle function and recovery.
+*   Fat (20-25% of daily calories): Emphasize healthy fats such as nuts, seeds, avocados, and olive oil for energy production and overall health.
+
+**Meal Frequency and Timing:** To manage hunger and maintain stable energy levels throughout the day:
+
+1.  Breakfast: Combine complex carbohydrates with plant-based protein sources to provide sustained energy.
+2.  Mid-morning snack: Opt for fruits or vegetables with a small portion of nuts or seeds.
+3.  Lunch: Focus on whole grains, lean proteins, and a variety of vegetables to keep energy levels stable.
+4.  Pre- and post-run snacks: Choose easily digestible carbohydrates like dates, bananas, or berries, along with healthy fats like almonds or cashews.
+
+**Specific Food Recommendations:** Incorporate these gluten-free, vegetarian options into the diet:
+
+*   Legumes (lentils, chickpeas, black beans)
+*   Tofu and tempeh
+*   Seitan
+*   Nuts and seeds (almonds, sunflower seeds, pumpkin seeds)
+*   Whole grains (brown rice, quinoa, gluten-free oats)
+*   Fresh fruits and vegetables
+*   Avocados
+*   Fatty fish like salmon or tuna
+
+**Hydration:** Adequate hydration is crucial for endurance athletes. Aim to drink at least 8-10 glasses of water per day.
+
+    **Sample Meal Plan:**
+
+Monday:
+
+*   Breakfast: Overnight oats with almond milk, chia seeds, and fruit
+*   Lunch: Whole-grain pita stuffed with hummus, cucumber, bell peppers, and sprouts
+*   Snack: Apple slices with almond butter
+
+Tuesday:
+
+*   Breakfast: Smoothie bowl made with frozen berries, banana, spinach, and almond milk topped with nuts and seeds
+*   Lunch: Quinoa salad with roasted vegetables, chickpeas, and a citrus vinaigrette dressing
+*   Pre-run snack: Dates and energy chews
+
+Wednesday:
+
+*   Breakfast: Whole-grain toast with avocado, cherry tomatoes, and scrambled tofu
+*   Lunch: Lentil soup with brown rice and steamed broccoli
+*   Snack: Carrot sticks with guacamole
+
+Thursday:
+
+*   Breakfast: Smoothie made with almond milk, banana, spinach, and protein powder
+*   Lunch: Grilled vegetable wrap with hummus and mixed greens
+*   Pre-run snack: Banana and energy chews
+
+Friday:
+
+*   Breakfast: Whole-grain pancakes topped with nuts, seeds, and fruit
+*   Lunch: Chickpea salad with mixed greens and a citrus vinaigrette dressing
+*   Snack: Apple slices with almond butter</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">The solution provides a good starting point for an athlete's meal plan, but it requires significant adjustments to meet the criteria. The total daily calories are too high, protein intake from plant-based sources is insufficient, and carbohydrate intake could be improved.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with contradictory requirements (e.g., 'healthy' and ' athlete')</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 70<br><strong>goal:</strong> Weight Loss<br><strong>restrictions:</strong> Vegetarian</td>
+                <td class="criteria">• Total daily calories: 2500<br>• Macronutrient balance: 1.6g protein, 2g fat, 60g carbohydrates per day<br>• Meal frequency: 5 meals, including 3 main meals and 2 snacks<br>• Hydration: at least 8 cups of water per day</td>
+                <td class="output"><pre>Based on the provided information, I'll create a personalized nutrition plan for this person.
+
+**Caloric Intake:**
+To support weight loss, a daily caloric intake of 1500-1800 calories is recommended. This will provide an energy deficit of 500-750 calories, promoting weight loss while still allowing for adequate nutrient intake.
+
+**Macronutrient Breakdown:**
+
+* Carbohydrates: 45-55% of total calories (200-250g)
+* Protein: 15-20% of total calories (80-100g)
+* Fat: 25-30% of total calories (35-40g)
+
+**Meal Frequency and Timing:**
+To support weight loss, eating frequent meals with a balance of protein, healthy fats, and complex carbohydrates can help maintain satiety and boost metabolism. Aim for 3 main meals and 2-3 snacks per day.
+
+**Vegetarian Meal Ideas:**
+
+1. Breakfast:
+	* Overnight oats with fruits and nuts (250 calories)
+	* Whole-grain toast with avocado and scrambled eggs or tofu
+2. Lunch:
+	* Lentil soup with whole-grain bread and a side salad
+	* Grilled vegetable skewers with quinoa and hummus
+3. Dinner:
+	* Vegetable stir-fry with brown rice and tofu
+	* Black bean and sweet potato enchiladas with whole-grain tortillas
+
+**Snacks:**
+
+1. Fresh fruits and vegetables (100-150 calories)
+2. Nuts and seeds (e.g., almonds, pumpkin seeds) (100-150 calories)
+3. Whole-grain crackers with hummus or avocado spread (150-200 calories)
+
+**Beverages:**
+Stay hydrated by drinking plenty of water throughout the day.
+
+**Additional Tips:**
+
+* Include a variety of colorful fruits and vegetables in your diet to ensure adequate vitamins and minerals.
+* Choose whole grains over refined carbohydrates for more fiber and nutrients.
+* Limit processed foods, added sugars, and saturated fats.
+* Aim for 150 minutes of moderate-intensity exercise or 75 minutes of vigorous-intensity exercise per week.
+
+**Sample Meal Plan:**
+
+Monday:
+
+* Breakfast: Overnight oats with fruits and nuts (250 calories)
+* Lunch: Lentil soup with whole-grain bread and a side salad (400 calories)
+* Dinner: Vegetable stir-fry with brown rice and tofu (500 calories)
+* Snack: Apple slices with almond butter (150 calories)
+
+Tuesday:
+
+* Breakfast: Whole-grain toast with avocado and scrambled eggs or tofu (250 calories)
+* Lunch: Grilled vegetable skewers with quinoa and hummus (400 calories)
+* Dinner: Black bean and sweet potato enchiladas with whole-grain tortillas (500 calories)
+* Snack: Carrot sticks with hummus (100 calories)
+
+Wednesday:
+
+* Breakfast: Smoothie bowl with fruits, spinach, and almond milk topped with nuts and seeds (300 calories)
+* Lunch: Whole-grain pasta with marinara sauce, vegetables, and tofu (400 calories)
+* Dinner: Grilled portobello mushrooms with roasted vegetables and quinoa (500 calories)
+* Snack: Rice cakes with peanut butter and banana slices (150 calories)
+
+Thursday:
+
+* Breakfast: Oatmeal with fruits and nuts (250 calories)
+* Lunch: Chickpea salad with mixed greens and whole-grain crackers (400 calories)
+* Dinner: Vegetable curry with brown rice and naan bread (500 calories)
+* Snack: Greek yogurt with berries and honey (150 calories)
+
+Friday:
+
+* Breakfast: Avocado toast on whole-grain bread with scrambled eggs or tofu (250 calories)
+* Lunch: Whole-grain sushi rolls with vegetables and tofu (400 calories)
+* Dinner: Quinoa and black bean bowl with roasted vegetables (500 calories)
+* Snack: Cottage cheese with cucumber slices (150 calories)
+
+Remember, this is a sample meal plan, and you should adjust the portion sizes based on your individual calorie needs. Also, consult with a healthcare professional or registered dietitian to create a personalized meal plan that meets your specific requirements.
+
+**Progress Tracking:**
+
+1. Weigh yourself once a week.
+2. Take body measurements once a fortnight.
+3. Track your food intake and physical activity using a food diary or mobile app.
+4. Monitor your progress by taking before-and-after photos.
+
+By following this personalized nutrition plan, you'll be on track to achieve your weight loss goal while ensuring adequate nutrient intake.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">The solution provides a clear and structured meal plan with specific food suggestions, but falls short in terms of caloric intake, macronutrient balance, and meal frequency. These issues prevent the solution from meeting all mandatory requirements.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with technical computer science terminology</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 70<br><strong>goal:</strong> Weight loss of 5kg in 1 month<br><strong>restrictions:</strong> Vegetarian</td>
+                <td class="criteria">• Total daily calories: 1500-1800<br>• Macro-nutrient balance (carbs: 55%, protein: 25%, fat: 20%)<br>• At least 3 servings of fruits and vegetables per day<br>• No added sugars or saturated fats</td>
+                <td class="output"><pre>Based on the information provided, I'll provide a personalized diet plan for this individual.
+
+**Caloric Intake**
+
+To lose 5kg in 1 month (approximately 0.8 kg/week), we'll aim for a daily caloric deficit of around 500 calories. This can be achieved by reducing overall daily energy intake while still providing enough nutrients for optimal health.
+
+For a 175cm tall, 70kg individual with a vegetarian diet, a suitable daily caloric intake could be:
+
+* Maintenance calories: approximately 1900-2000 calories/day
+* Weight loss calories: 1400-1500 calories/day (500 calorie deficit)
+
+**Macronutrient Breakdown**
+
+To achieve the weight loss goal, we'll focus on the following macronutrient breakdown:
+
+* Protein: 1.6-2 grams/kg body weight (112-140g per day)
+* Fat: 20-25% of total calories
+* Carbohydrates: 55-60% of total calories
+
+**Food Choices**
+
+Here are some food suggestions that align with the individual's dietary restrictions:
+
+1. **Protein sources**:
+	* Legumes (lentils, chickpeas, black beans)
+	* Tofu and tempeh
+	* Vegetarian protein powders (e.g., pea, rice, or hemp)
+2. **Vegetables**:
+	* Leafy greens (spinach, kale, collard greens)
+	* Broccoli, bell peppers, carrots, and other colorful vegetables
+3. **Fruits**:
+	* Berries (strawberries, blueberries, raspberries)
+	* Citrus fruits (oranges, grapefruits, lemons)
+4. **Whole grains**:
+	* Brown rice
+	* Quinoa
+	* Whole wheat bread and pasta
+5. **Healthy fats**:
+	* Nuts (almonds, walnuts, pecans)
+	* Seeds (chia, flax, hemp)
+	* Avocados
+
+**Sample Meal Plan**
+
+Here's a sample meal plan to get this individual started:
+
+Breakfast:
+
+* Overnight oats with almond milk, chia seeds, and berries
+* Whole grain toast with avocado and scrambled tofu
+
+Lunch:
+
+* Lentil soup with quinoa and mixed vegetables
+* Grilled tofu or tempeh with roasted sweet potatoes and steamed broccoli
+
+Dinner:
+
+* Vegetable stir-fry with brown rice and tofu
+* Quinoa salad with roasted vegetables, nuts, and seeds
+
+Snacks:
+
+* Carrot sticks with hummus
+* Apple slices with almond butter
+
+**Hydration**
+
+ Adequate hydration is essential for weight loss. Aim to drink at least 8-10 glasses of water per day.
+
+**Progress Monitoring**
+
+Regular monitoring of progress will help adjust the diet plan as needed. This can include tracking:
+
+* Weight
+* Measurements (waist, hip, etc.)
+* Body fat percentage (optional)
+* Food intake and physical activity
+
+By following this diet plan and staying committed to their goals, this individual should be able to achieve a weight loss of 5kg in 1 month while maintaining overall health.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution provides a clear and structured meal plan with specific food suggestions. However, it falls short in providing explicit daily caloric intake and macronutrient breakdown values.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a very short time frame (e.g., '1 day' for an athlete with extreme dietary needs)</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 65<br><strong>goal:</strong> muscle gain<br><strong>restrictions:</strong> vegetarian</td>
+                <td class="criteria">• Total daily calories exceed 2500<br>• Macro-nutrient distribution meets muscle gain goals (1.6g protein, 2g carbs, 0.5g fat per kilogram of body weight)<br>• All meals are planned within a 30-minute window after waking up</td>
+                <td class="output"><pre>Based on the provided information, I'll provide a general outline for a vegetarian diet to support muscle gain. Please note that it's essential to consult with a healthcare professional or registered dietitian before making any significant changes to your diet.
+
+**Caloric Intake:**
+To support muscle gain, you'll need to consume more calories than you burn. Aim for an daily caloric intake of 2500-2800 calories above maintenance levels.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6-2.2 grams per kilogram of body weight (110-140 grams per day) to support muscle growth and repair.
+* Carbohydrates: 2-3 grams per kilogram of body weight (130-195 grams per day) for energy and muscle recovery.
+* Fat: 0.5-1 gram per kilogram of body weight (33-65 grams per day) for hormone production, absorption, and energy.
+
+**Vegetarian Food Sources:**
+
+1. Protein:
+	* Legumes (lentils, chickpeas, black beans): 15-20 grams of protein per serving
+	* Tofu and tempeh: 20-30 grams of protein per serving
+	* Seitan (wheat gluten): 21-25 grams of protein per serving
+	* Nuts and seeds (chickpeas, hemp seeds, chia seeds): 5-10 grams of protein per ounce
+2. Carbohydrates:
+	* Whole grains (brown rice, quinoa, whole wheat): 30-40 grams of carbohydrates per serving
+	* Legumes: 20-25 grams of carbohydrates per serving
+	* Vegetables (broccoli, spinach, bell peppers): 5-10 grams of carbohydrates per serving
+3. Fat:
+	* Nuts and seeds (almonds, chia seeds, flaxseeds): 5-10 grams of fat per ounce
+	* Avocado: 10-15 grams of fat per medium-sized fruit
+
+**Meal Ideas:**
+
+1. Breakfast:
+	* Oatmeal with almond butter, banana, and hemp seeds (400 calories, 25g protein)
+2. Snack:
+	* Apple slices with almond butter (150 calories, 8g protein)
+3. Lunch:
+	* Whole grain wrap with hummus, avocado, and mixed vegetables (500 calories, 20g protein)
+4. Dinner:
+	* Quinoa bowl with roasted vegetables, tofu, and nuts (600 calories, 25g protein)
+
+**Sample Meal Plan:**
+
+Monday:
+
+* Breakfast: Oatmeal with almond butter, banana, and hemp seeds
+* Lunch: Whole grain wrap with hummus, avocado, and mixed vegetables
+* Dinner: Quinoa bowl with roasted vegetables, tofu, and nuts
+
+Tuesday:
+
+* Breakfast: Smoothie bowl with spinach, banana, almond milk, protein powder, and chia seeds
+* Lunch: Lentil soup with whole grain bread and a side salad
+* Dinner: Grilled tofu with brown rice and steamed broccoli
+
+Wednesday:
+
+* Breakfast: Avocado toast on whole grain bread with scrambled eggs and cherry tomatoes
+* Lunch: Whole grain pasta with marinara sauce, roasted vegetables, and tofu
+* Dinner: Quinoa and black bean bowl with roasted sweet potatoes and avocado
+
+Thursday:
+
+* Breakfast: Greek yogurt with berries, granola, and hemp seeds
+* Lunch: Hummus wrap with mixed greens and sliced cucumber
+* Dinner: Lentil curry with brown rice and naan bread
+
+Friday:
+
+* Breakfast: Overnight oats with almond milk, chia seeds, and berries
+* Lunch: Grilled tofu with quinoa and steamed asparagus
+* Dinner: Roasted vegetable bowl with quinoa, avocado, and nuts
+
+Remember to stay hydrated by drinking plenty of water throughout the day. Also, consider consulting with a registered dietitian or healthcare professional to create a personalized meal plan that meets your specific needs and goals.
+
+**Supplements:**
+If you're struggling to get enough protein from food sources alone, consider adding plant-based protein powder supplements to your diet. Some popular options include pea protein, hemp protein, and brown rice protein.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution provides a solid foundation for a vegetarian diet to support muscle gain, but falls short in providing exact timing and portion sizes for each meal. Additionally, it lacks specific guidance on hydration and electrolyte intake.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with unreasonably complex dietary restrictions (e.g., gluten-free, vegan, keto)</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 70<br><strong>goal:</strong> lose 5kg in 1 month<br><strong>restrictions:</strong> gluten-free, low-carb, vegan</td>
+                <td class="criteria">• Total daily caloric intake is below 1500 calories<br>• Macro-nutrient balance (protein:35%, fat:20%, carbs:45%)<br>• All meals are gluten-free and do not contain any animal products<br>• The meal plan includes at least 5 servings of fruits and vegetables per day</td>
+                <td class="output"><pre>Given the individual's height, weight, and dietary restrictions, here's a comprehensive guide to help them achieve their goal of losing 5kg in 1 month:
+
+**Daily Caloric Intake:**
+
+To lose weight, it's essential to create a calorie deficit. For a 175cm (5'9") person weighing 70kg, the recommended daily caloric intake is around 1800-2000 calories. To achieve weight loss of 5kg in 1 month, aim for a daily caloric deficit of 500-750 calories.
+
+For this individual, with a low-carb and vegan diet, here's a suggested daily meal plan:
+
+**Breakfast (300-400 calories)**
+
+* Monday: Gluten-free oatmeal with almond milk, chia seeds, and berries
+* Tuesday: Smoothie bowl with banana-free protein powder, spinach, almond milk, and sliced almonds
+* Wednesday: Vegan yogurt with granola made from gluten-free oats and topped with fresh berries
+* Thursday: Avocado toast on gluten-free bread with scrambled tofu and cherry tomatoes
+* Friday: Chia seed pudding with coconut milk, vanilla extract, and fresh berries
+
+**Lunch (400-500 calories)**
+
+* Monday: Grilled vegan chicken breast with roasted vegetables and quinoa
+* Tuesday: Lentil soup with a side salad made from mixed greens, cherry tomatoes, and sliced avocado
+* Wednesday: Vegan wrap with hummus, cucumber, bell peppers, and sprouts on gluten-free wraps
+* Thursday: Chickpea salad with chopped veggies, olive oil, and lemon juice
+* Friday: Grilled tofu with roasted broccoli and cauliflower rice
+
+**Dinner (400-500 calories)**
+
+* Monday: Vegan stir-fry with mixed vegetables, brown rice, and tofu
+* Tuesday: Black bean and sweet potato tacos with avocado salsa and gluten-free tortillas
+* Wednesday: Quinoa and black bean bowl with grilled tofu and roasted vegetables
+* Thursday: Lentil curry with brown rice and a side of steamed vegetables
+* Friday: Grilled portobello mushrooms with roasted asparagus and quinoa
+
+**Snacks (100-200 calories)**
+
+* Fresh fruits, cut veggies with hummus, or energy balls made from oats and nuts
+
+**Key Nutrients to Focus On:**
+
+1. Protein: 15-20% of daily calories should come from protein sources such as tofu, tempeh, lentils, chickpeas, and vegan protein powder.
+2. Healthy Fats: Nuts, seeds, avocado, and coconut oil are great sources of healthy fats.
+3. Complex Carbohydrates: Focus on whole grains like quinoa, brown rice, and gluten-free oats.
+
+**Remember:**
+
+* Drink plenty of water throughout the day to stay hydrated.
+* Incorporate regular physical activity, such as walking or jogging, for at least 30 minutes a day.
+* Monitor progress by tracking weight loss, body measurements, and overall energy levels.
+* Consult with a healthcare professional or registered dietitian before starting any new diet.
+
+This meal plan provides approximately 1800-2000 calories per day, which is suitable for a person looking to lose weight. It focuses on whole, nutrient-dense foods and includes plenty of protein, healthy fats, and complex carbohydrates. Remember to stay hydrated and incorporate regular physical activity to achieve the desired results.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution provides a detailed meal plan that meets most of the mandatory requirements. However, it falls short in terms of daily caloric intake and macro-nutrient balance. Despite this, the plan is well-structured and tailored to the individual's needs.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with an athlete of a specific age group or developmental stage (e.g., 'youth athlete')</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 65<br><strong>goal:</strong> Weight Loss<br><strong>restrictions:</strong> Vegan</td>
+                <td class="criteria">• Total daily calories: < 2500<br>• Macronutrient distribution: Protein > 1.6g/kg body weight, Fat < 20% of total calories, Carbohydrates > 55% of total calories<br>• All meal suggestions include a source of protein and healthy fats</td>
+                <td class="output"><pre>Based on the information provided, I'll create a personalized vegan weight loss plan for this individual.
+
+**Caloric Needs**
+
+To support weight loss, we'll aim for a daily caloric intake of 1500-1700 calories. This will provide enough energy while creating a calorie deficit to promote weight loss.
+
+**Macronutrient Breakdown**
+
+For a vegan weight loss diet, I recommend the following macronutrient breakdown:
+
+* Protein: 1.6-2.2 grams per kilogram of body weight (110-140 grams)
+* Fat: 20-25% of daily calories
+* Carbohydrates: 55-65% of daily calories
+
+**Meal Plan Suggestions**
+
+Here are some vegan meal ideas that meet the above requirements:
+
+**Breakfast Options**
+
+* Oatmeal with almond milk, banana, and walnuts (300 calories, 10g protein)
+* Smoothie bowl with spinach, avocado, berries, and almond milk (350 calories, 15g protein)
+* Whole grain toast with almond butter and sliced apple (250 calories, 8g protein)
+
+**Lunch Options**
+
+* Lentil soup with quinoa and steamed vegetables (400 calories, 20g protein)
+* Grilled tofu or tempeh with roasted vegetables and brown rice (500 calories, 25g protein)
+* Whole grain wrap with hummus, cucumber, tomato, and spinach (350 calories, 10g protein)
+
+**Dinner Options**
+
+* Stuffed bell peppers with quinoa, black beans, and vegetables (450 calories, 20g protein)
+* Grilled portobello mushrooms with roasted sweet potatoes and steamed broccoli (400 calories, 15g protein)
+* Vegan stir-fry with tofu or tempeh, mixed vegetables, and brown rice (500 calories, 25g protein)
+
+**Snack Options**
+
+* Fresh fruit salad with almonds (150 calories, 4g protein)
+* Carrot sticks with hummus (100 calories, 2g protein)
+* Dark chocolate square (100 calories, negligible protein)
+
+**Beverages**
+
+* Stay hydrated by drinking plenty of water throughout the day
+* Herbal teas or unsweetened tea can be a low-calorie alternative to sugary drinks
+
+**Tips and Considerations**
+
+* Eat regular meals to maintain energy levels and prevent excessive hunger
+* Include a variety of colorful vegetables in your diet to ensure adequate nutrient intake
+* Incorporate physical activity, such as walking or yoga, to support weight loss and overall health
+* Monitor progress by tracking caloric intake and weighing yourself weekly
+
+Remember, this is a personalized plan based on the provided information. It's essential to consult with a healthcare professional or registered dietitian for a tailored nutrition plan that meets your specific needs and goals.
+
+Please note that this is a general guide, and individual results may vary. Be patient, stay consistent, and make adjustments as needed to achieve optimal weight loss and overall health.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets most mandatory requirements but has some minor issues with clarity and detail. The output provides a good starting point for a vegan weight loss meal plan, but could benefit from more explicit guidance on key aspects such as portion sizes and timing.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a very short list of acceptable food items (e.g., only 3-5 options)</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 70<br><strong>goal:</strong> Weight loss<br><strong>restrictions:</strong> Vegetarian</td>
+                <td class="criteria">• Prompts include a 1-day meal plan with approximately 1500 calories<br>• Includes at least 2 protein sources (e.g. legumes, tofu)<br>• Suggests healthy snack options (e.g. fruits, nuts)<br>• Meets the athlete's dietary restrictions</td>
+                <td class="output"><pre>Based on the information provided, I'll suggest a personalized meal plan for the 175 cm (5'9") tall and 70 kg (154 lbs) person with a weight loss goal who follows a vegetarian diet.
+
+**Caloric Needs:**
+To achieve weight loss, we'll aim for a daily caloric deficit of 500-750 calories. This translates to a daily caloric intake of approximately 1500-1750 calories for the individual.
+
+**Macronutrient Breakdown:**
+
+* Protein: 1.6-2.2 grams per kilogram of body weight (120-154 grams)
+* Fat: 20-30% of daily calories
+* Carbohydrates: 55-65% of daily calories
+
+**Meal Plan Suggestions:**
+Here's a sample meal plan to get you started:
+
+**Breakfast**
+
+* Monday, Wednesday, Friday: Overnight oats with almond milk, rolled oats, and fruit (300 calories)
+* Tuesday, Thursday: Whole-grain toast with avocado, scrambled eggs, and cherry tomatoes (350 calories)
+
+**Lunch**
+
+* Monday, Wednesday, Friday: Quinoa salad with roasted vegetables, chickpeas, and a citrus vinaigrette dressing (400 calories)
+* Tuesday, Thursday: Lentil soup with whole-grain bread and a side salad (450 calories)
+
+**Dinner**
+
+* Monday, Wednesday, Friday: Grilled tofu or tempeh with roasted sweet potatoes, green beans, and quinoa (500 calories)
+* Tuesday, Thursday: Vegetable stir-fry with brown rice, edamame, and a small amount of oil (550 calories)
+
+**Snacks**
+
+* Fresh fruits or cut veggies with hummus
+* Greek yogurt with berries or honey
+
+**Beverages**
+
+* Drink at least 8-10 glasses of water throughout the day
+* Herbal teas or black coffee for additional hydration and flavor
+
+**Sample Meal Plan:**
+
+Here's a sample meal plan for one week:
+
+Monday:
+
+* Breakfast: Overnight oats (300 calories)
+* Lunch: Quinoa salad (400 calories)
+* Dinner: Grilled tofu with roasted sweet potatoes and green beans (500 calories)
+* Snack: Fresh fruit
+
+Tuesday:
+
+* Breakfast: Whole-grain toast with avocado, scrambled eggs, and cherry tomatoes (350 calories)
+* Lunch: Lentil soup with whole-grain bread and a side salad (450 calories)
+* Dinner: Vegetable stir-fry with brown rice, edamame, and a small amount of oil (550 calories)
+* Snack: Greek yogurt with berries
+
+Wednesday:
+
+* Breakfast: Overnight oats (300 calories)
+* Lunch: Quinoa salad (400 calories)
+* Dinner: Grilled tofu with roasted sweet potatoes and green beans (500 calories)
+* Snack: Cut veggies with hummus
+
+Thursday:
+
+* Breakfast: Whole-grain toast with avocado, scrambled eggs, and cherry tomatoes (350 calories)
+* Lunch: Lentil soup with whole-grain bread and a side salad (450 calories)
+* Dinner: Vegetable stir-fry with brown rice, edamame, and a small amount of oil (550 calories)
+* Snack: Greek yogurt with berries
+
+Friday:
+
+* Breakfast: Overnight oats (300 calories)
+* Lunch: Quinoa salad (400 calories)
+* Dinner: Grilled tofu with roasted sweet potatoes and green beans (500 calories)
+* Snack: Fresh fruit
+
+**Remember:** This is just a sample meal plan, and you should adjust the portion sizes and food choices based on your personal preferences and dietary needs. Consult with a registered dietitian or healthcare professional to create a personalized meal plan that suits your requirements.
+
+Keep in mind that weight loss results may vary depending on individual factors such as starting weight, body composition, physical activity level, and overall health.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution provides a sample meal plan that meets the athlete's dietary restrictions and includes healthy snack options. However, it lacks specific details on daily caloric intake and macronutrient breakdown.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a specific macronutrient ratio requirement (e.g., 40% carbs, 30% protein, 30% fat)</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 70<br><strong>goal:</strong> muscle gain<br><strong>restrictions:</strong> vegan</td>
+                <td class="criteria">• Total daily calories exceed 2500 with an emphasis on macronutrient balance (60% carbs, 25% protein, 15% fat)<br>• Meal plan includes a balanced mix of protein sources from legumes, beans, and tofu, with an average of 120g of protein per day<br>• At least 5 servings of fruits and vegetables are included in the meal plan</td>
+                <td class="output"><pre>For a 180 cm (5'11") tall, 70 kg (154 lbs) individual with the goal of muscle gain and following a vegan diet, here's a tailored nutrition plan:
+
+**Caloric Intake:**
+To achieve muscle gain, you'll need to consume more calories than your body burns. Aim for an additional 250-500 calories above maintenance levels. Based on a daily activity level, a suitable caloric intake could be:
+
+* Sedentary: 2800-3000 calories/day
+* Lightly active: 3100-3400 calories/day
+* Moderately active: 3500-3800 calories/day
+
+Assuming a moderately active lifestyle, let's aim for 3600 calories/day.
+
+**Macronutrient Breakdown:**
+
+1. **Protein:** Aim for 1.6-2.2 grams of protein per kilogram of body weight (140-154 grams) to support muscle growth and repair.
+	* Daily protein intake: 150-170 grams
+2. **Carbohydrates:** Focus on complex, high-fiber carbohydrates like whole grains, fruits, and vegetables.
+	* Aim for 2-3 grams of carbohydrates per kilogram of body weight (140-210 grams)
+3. **Fat:** Emphasize healthy fats like nuts, seeds, avocado, and olive oil.
+	* Aim for 0.5-1 gram of fat per kilogram of body weight (35-70 grams)
+
+**Meal Frequency and Timing:**
+Aim for 5-6 meals per day, spaced out every 2-3 hours, to keep your muscles fueled and support growth.
+
+**Sample Meal Plan:**
+
+Breakfast: Overnight oats with almond milk, banana, and walnuts (400 calories, 30g protein)
+Mid-morning snack: Apple slices with almond butter (150 calories, 4g protein)
+Lunch: Quinoa salad with roasted vegetables, chickpeas, and avocado (600 calories, 25g protein)
+Mid-afternoon snack: Smoothie bowl with banana, spinach, and plant-based protein powder (300 calories, 20g protein)
+Dinner: Lentil soup with whole-grain bread and a side salad (700 calories, 30g protein)
+Before bedtime snack: Soy milk with dates and almond butter (250 calories, 15g protein)
+
+**Supplements:**
+Consider adding vegan protein powders to your diet to support muscle growth. Other supplements like creatine, BCAA, and mass gainer can also be helpful.
+
+Remember, a well-planned vegan diet with adequate protein, healthy fats, and complex carbohydrates is essential for muscle gain. Make sure to consult with a registered dietitian or a healthcare professional to create a personalized meal plan that suits your needs.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">While the solution provides a comprehensive overview of the athlete's nutritional needs, it lacks specificity in certain areas. The lack of exact portion sizes and supplement information may lead to inaccuracies or confusion. However, the overall structure and content of the meal plan are well-organized and easy to follow.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
